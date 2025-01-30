@@ -1,0 +1,255 @@
+include _header.jade
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.1.0/nouislider.min.js"></script>
+<script src="js/range_slider.js"></script>
+<script src="js/catalog.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.1.0/nouislider.min.css">
+<link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="css/range_slider.css">
+<link rel="stylesheet" href="css/catalog.css">
+<div class="site-container">
+	<div class="site-container__inner">
+		<aside class="site-container__inner__left">
+			<div class="filter-container">
+				<div class="filter-block">
+					<div class="shop2-filter">
+						<div class="shop2-filter__header hide">Фильтр</div>
+						<div class="shop2-filter__items">
+							<div class="shop2-filter__item">
+								<div class="shop2-filter__title active">Наши предложения</div>
+								<div class="shop2-filter__body" style="display: block;">
+									<div class="shop2-filter__params">
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Выгодная цена (4)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Новинка (34)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Распродажа (12)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Хит продаж (29) </a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Уценка (5)</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="shop2-filter__item gr-field-style">
+								<div class="shop2-filter__title active">Цена</div>
+								<div class="shop2-filter__body" style="display: block;">
+									<div class="style-2 wrapper m-b-50 p-l-r">
+										<span>от </span><input type="text" class="input-with-keypress-0">
+										<span>до </span><input type="text" class="input-with-keypress-1">
+										<div class="slider-keypress m-b-20"></div>
+									</div>
+								</div>
+							</div>
+							<div class="shop2-filter__item">
+								<div class="shop2-filter__title active">Название фильтра</div>
+								<div class="shop2-filter__body" style="display: block;">
+									<div class="shop2-filter__params">
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория 1 (168)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (5)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (4)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (34)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (2)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Тест 1 (5)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Тест 2 (5)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Тест 3 (5)</a></div>
+									</div>
+									<div class="show_more_fields"><span class="show_more_fields_btn gr-button-1 medium-btn" data-text="Показать еще" data-fields-total="85"><span class="show_more_text active">Показать еще</span></span></div>
+								</div>
+							</div>
+							<div class="shop2-filter__item">
+								<div class="shop2-filter__title">Название фильтра</div>
+								<div class="shop2-filter__body">
+									<div class="shop2-filter__params">
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория 1 (168)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (5)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (4)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (34)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (2)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Тест 1 (5)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Тест 2 (5)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Тест 3 (5)</a></div>
+									</div>
+									<div class="show_more_fields"><span class="show_more_fields_btn gr-button-1 medium-btn" data-text="Показать еще" data-fields-total="85"><span class="show_more_text active">Показать еще</span></span></div>
+								</div>
+							</div>
+							<div class="shop2-filter__item">
+								<div class="shop2-filter__title">Название фильтра</div>
+								<div class="shop2-filter__body">
+									<div class="shop2-filter__params">
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория 1 (168)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (5)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (4)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (34)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (2)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Тест 1 (5)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Тест 2 (5)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Тест 3 (5)</a></div>
+									</div>
+									<div class="show_more_fields"><span class="show_more_fields_btn gr-button-1 medium-btn" data-text="Показать еще" data-fields-total="85"><span class="show_more_text active">Показать еще</span></span></div>
+								</div>
+							</div>
+							<div class="shop2-filter__item">
+								<div class="shop2-filter__title">Название фильтра</div>
+								<div class="shop2-filter__body">
+									<div class="shop2-filter__params">
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория 1 (168)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (5)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (4)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (34)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Категория  (2)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Тест 1 (5)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Тест 2 (5)</a></div>
+										<div class="shop2-filter__checkbox"><a href="#" data-name="" data-value="" class="param-val">Тест 3 (5)</a></div>
+									</div>
+									<div class="show_more_fields"><span class="show_more_fields_btn gr-button-1 medium-btn" data-text="Показать еще" data-fields-total="85"><span class="show_more_text active">Показать еще</span></span></div>
+								</div>
+							</div>
+						</div>
+						<div class="shop2-filter__btns">
+							<a href="#" class="filter-reset">Сбросить фильтр</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="site-links">
+				<div class="site-links__items"><a href="#">Найти<br/><strong>своего покровителя</strong></a></div>
+				<div class="site-links__items"><a href="#">Написание<br/><strong>редких святых</strong></a></div>
+				<div class="site-links__items"><a href="#">Какую икону<br/><strong>купить в подарок</strong></a></div>
+				<div class="site-links__items"><a href="#">Перед какой иконой<br/><strong>молиться в различных ситуациях</strong></a></div>
+			</div>
+		</aside>
+		<div class="site-container__inner__right">
+			<h1>Иконы Святых</h1>
+			<div class="filter_button"><a href="javascript:void(0);" data-remodal-target="filter-pop">Фильтр</a></div>
+			<div class="sorting-block sorting">
+				<div class="sorting-block__inner">
+					<div class="sorting-block__inner__body">
+						<span class="no-sorting">Сортировать по:</span>
+					</div>
+					<select name="" id="">
+						<option>Самые дорогие</option>
+						<option>Самые дешевые</option>
+						<option>Название от Я</option>
+						<option>Название от А</option>
+					</select>
+				</div>
+			</div>
+			<div class="product-list">
+				<div class="product-item">
+					<div class="product-item__stock buy">В наличии</div>
+					<div class="favorite_btn"></div>
+					<div class="product-item__image"><a href="#"><img src="img/pl_pic1.png"></a></div>
+					<div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+					<div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+					<div class="product-item__bottom">
+						<div class="product-item__price"><span>35 500</span> руб</div>
+						<button class="product-item__btn buy"><span>В корзину</span></button>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="product-item__stock buy">В наличии</div>
+					<div class="favorite_btn"></div>
+					<div class="product-item__image"><a href="#"><img src="img/pl_pic2.png"></a></div>
+					<div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+					<div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+					<div class="product-item__bottom">
+						<div class="product-item__price"><span>35 500</span> руб</div>
+						<button class="product-item__btn buy"><span>В корзину</span></button>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="product-item__stock buy">В наличии</div>
+					<div class="favorite_btn"></div>
+					<div class="product-item__image"><a href="#"><img src="img/pl_pic3.png"></a></div>
+					<div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+					<div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+					<div class="product-item__bottom">
+						<div class="product-item__price"><span>35 500</span> руб</div>
+						<button class="product-item__btn buy"><span>В корзину</span></button>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="product-item__stock buy">В наличии</div>
+					<div class="favorite_btn"></div>
+					<div class="product-item__image"><a href="#"><img src="img/pl_pic1.png"></a></div>
+					<div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+					<div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+					<div class="product-item__bottom">
+						<div class="product-item__price"><span>35 500</span> руб</div>
+						<button class="product-item__btn buy"><span>В корзину</span></button>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="product-item__stock notavailable">ПОД ЗАКАЗ</div>
+					<div class="favorite_btn"></div>
+					<div class="product-item__image"><a href="#"><img src="img/pl_pic2.png"></a></div>
+					<div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+					<div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+					<div class="product-item__bottom">
+						<div class="product-item__price"><span>35 500</span> руб</div>
+						<button class="product-item__btn buy"><span>В корзину</span></button>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="product-item__stock buy">В наличии</div>
+					<div class="favorite_btn"></div>
+					<div class="product-item__image"><a href="#"><img src="img/pl_pic3.png"></a></div>
+					<div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+					<div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+					<div class="product-item__bottom">
+						<div class="product-item__price"><span>35 500</span> руб</div>
+						<button class="product-item__btn buy"><span>В корзину</span></button>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="product-item__stock buy">В наличии</div>
+					<div class="favorite_btn"></div>
+					<div class="product-item__image"><a href="#"><img src="img/pl_pic1.png"></a></div>
+					<div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+					<div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+					<div class="product-item__bottom">
+						<div class="product-item__price"><span>35 500</span> руб</div>
+						<button class="product-item__btn buy"><span>В корзину</span></button>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="product-item__stock buy">В наличии</div>
+					<div class="favorite_btn"></div>
+					<div class="product-item__image"><a href="#"><img src="img/pl_pic2.png"></a></div>
+					<div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+					<div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+					<div class="product-item__bottom">
+						<div class="product-item__price"><span>35 500</span> руб</div>
+						<button class="product-item__btn buy"><span>В корзину</span></button>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="product-item__stock buy">В наличии</div>
+					<div class="favorite_btn"></div>
+					<div class="product-item__image"><a href="#"><img src="img/pl_pic3.png"></a></div>
+					<div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+					<div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+					<div class="product-item__bottom">
+						<div class="product-item__price"><span>35 500</span> руб</div>
+						<button class="product-item__btn buy"><span>В корзину</span></button>
+					</div>
+				</div>
+			</div>
+			<ul class="shop-pagelist">
+				<li class="page-first"><a href="#">Начало</a></li>
+				<li class="page-prev"><a href="#"><svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.381798 3.92965C0.186537 4.12491 0.186537 4.44149 0.381798 4.63676L3.56378 7.81874C3.75904 8.014 4.07562 8.014 4.27089 7.81874C4.46615 7.62347 4.46615 7.30689 4.27089 7.11163L1.44246 4.2832L4.27089 1.45477C4.46615 1.25951 4.46615 0.94293 4.27089 0.747668C4.07562 0.552406 3.75904 0.552406 3.56378 0.747668L0.381798 3.92965ZM16.7354 3.7832L0.735352 3.7832L0.735352 4.7832L16.7354 4.7832L16.7354 3.7832Z" fill="#C6AB86"/></svg></a></li>
+				<li class="page-num"><a href="#">1</a></li>
+				<li class="page-num active-num" data-active-url="#"><a href="#">2</a></li>
+				<li class="page-num"><a href="#">3</a></li>
+				<li class="page-num"><a href="#">...</a></li>
+				<li class="page-num"><a href="#">15</a></li>
+				<li class="page-next"><a href="#"><svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.0889 4.63675C17.2842 4.44149 17.2842 4.12491 17.0889 3.92965L13.9069 0.747667C13.7117 0.552405 13.3951 0.552405 13.1998 0.747667C13.0046 0.942929 13.0046 1.25951 13.1998 1.45477L16.0282 4.2832L13.1998 7.11163C13.0046 7.30689 13.0046 7.62347 13.1998 7.81873C13.3951 8.014 13.7117 8.014 13.9069 7.81873L17.0889 4.63675ZM0.735352 4.7832L16.7354 4.7832L16.7354 3.7832L0.735351 3.7832L0.735352 4.7832Z" fill="#C6AB86"/></svg></a></li>
+				<li class="page-last"><a href="#">Конец</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="site-container-block">Икона – это важная и неотъемлемая часть православной традиции. Без иконы невозможно себе представить дом, а сейчас квартиру каждого православного человека.Вы можете купить икону и подарить своему близкому человеку, другу, коллеге по работе. Такой подарок будет знаком любви, уважения, заботы и искренности ваших чувств.<br/>Икона – это образ или изображение лиц святых, а также событий из церковной или священной истории. Самое главное в том, что иконы напоминают молящемуся человеку о первообразе. Когда ты взираешь на икону, то ты возносишь свое сознание, свой ум и душу от образа к первообразу. Иконы позволяют человеку стать ближе к Богу, попросить у него помощи и защиты. И нередко на молитвы Господь отвечает и приносит спасение молящимся.<br/><strong>Если Вы не нашли нужную Вам икону, можете написать нам или позвонить по телефону 8-910-775-44-10 и мы вам подскажем в каком из магазинов Москвы или Санкт-Петербурга она может быть в наличии.</strong></div>
+	
+	include _bottom_form.jade
+</div>
+<div class="remodal" data-remodal-id="filter-pop" role="dialog" data-remodal-options="hashTracking: false">
+	<button data-remodal-action="close" class="close-button"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3"><line x1="30.6329" y1="10.5617" x2="10.5626" y2="30.632" stroke="#781F1C" stroke-width="2"/><line x1="29.5468" y1="29.9433" x2="9.83689" y2="10.2333" stroke="#781F1C" stroke-width="2"/></g></svg></button>
+	<div class="filter-pop-in"></div>   
+</div>
+include _footer.jade

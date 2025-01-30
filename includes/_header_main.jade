@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Тайтл</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous" ></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/site_styles.css">
+
+	<link rel='stylesheet' id='pmt-lightgallery-css' href='//cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css?ver=1.0.0' media='' />
+	<script src="//cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js?ver=1.0.0"></script>
+	<script src="js/site_main.js"></script>
+</head>
+<body>	
+	<body>	
+	<div class="menu_burger">
+		<div class="menuClose"></div>
+		<div class="menu_scroll">
+			<div class="menu_top">
+				<ul>
+					<li class="has_list">
+						<a href=""><span>О мастерской</span><i></i></a>
+						<ul>
+							<li><a href="">Как заказать</a></li>
+							<li><a href="">Вопрос ответ</a></li>
+							<li><a href="">Блог</a></li>
+							<li><a href="">Отзывы</a></li>
+						</ul>
+					</li>
+					<li class="has_list">
+						<a href=""><span>Покупателям</span><i></i></a>
+						<ul>
+							<li><a href="">Как заказать</a></li>
+							<li><a href="">Вопрос ответ</a></li>
+							<li><a href="">Блог</a></li>
+							<li><a href="">Отзывы</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href=""><span>Доставка и оплата</span></a>
+					</li>
+					<li><a href=""><span>Контакты</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="site_wrapper">
+		<header class="header">
+			<div class="block_inner">
+				<div class="header__top">
+					<div class="address">
+						<div class="mob">Большая Якиманка, 19</div>
+						<div class="pc">Москва,  Большая Якиманка, 19,  метро Полянка</div>
+					</div>
+					<div class="right">
+						include _soc_block.jade
+						<div class="phone"><a href="tel:+7 495 888 4567">+7 495 888 4567</a></div>
+						<a href="" class="btn_link" data-remodal-target="callback-form-main">Обратный звонок</a>
+					</div>
+				</div>
+				<div class="header__middle">
+					<div class="left_img">
+						<img src="img/left_img.png" alt="">
+					</div>
+					<div class="center">
+						<div class="logo">
+							<a href="">
+								<img src="img/logo.png" alt="">
+							</a>
+						</div>
+						<div class="slogan">Икона — это воплощенная молитва. <br> Она создается в молитве и ради молитвы,<br> движущей силой которой является любовь к Богу.</div>
+						<div class="label">архимандрит Зинон</div>
+					</div>
+					<div class="right_img">
+						<img src="img/right_img.png" alt="">
+					</div>
+				</div>
+				<div class="header__panel">
+					<div class="inner">
+						<div class="catalog_block_header">
+							<div class="catalog_btn">КАТАЛОГ</div>
+							<div class="catalog_list_popup">
+								<ul>
+									<li><a href="">Иконы в наличии</a></li>
+									<li><a href="">ПОПУЛЯРНЫЕ иконы</a></li>
+									<li><a href="">Иконы Спасителя</a></li>
+									<li><a href="">Иконы Богородицы</a></li>
+									<li><a href="">Иконы Святых (именные)</a></li>
+									<li><a href="">Иконы Ангела Хранителя</a></li>
+									<li><a href="">Иконы Архангелов</a></li>
+								</ul>
+								<ul>
+									<li><a href="">Иконы Троицы	</a></li>
+									<li><a href="">Венчальные пары</a></li>
+									<li><a href="">Иконы Петра и Февронии</a></li>
+									<li><a href="">Иконы Мерные</a></li>
+									<li><a href="">Иконы Семейные</a></li>
+									<li><a href="">Иконы Праздников</a></li>
+								</ul>
+								<ul>
+									<li><a href="">Соборы Святых</a></li>
+									<li><a href="">Библейские сюжеты</a></li>
+									<li><a href="">Иконы Храмовые</a></li>
+									<li><a href="">Иконы эксклюзивные</a></li>
+									<li><a href="">Иконы миниатюрные (дорожные)</a></li>
+									<li><a href="">Иконы ювелирные</a></li>
+								</ul>	
+							</div>
+						</div>
+						<div class="search_block">
+							<form action="">
+								<input type="text" placeholder="Название иконы или артикул">
+								<button></button>
+							</form>
+						</div>
+						<div class="top_menu">
+							<ul>
+								<li class="has_list">
+									<a href=""><span>О мастерской</span><i></i></a>
+									<ul>
+										<li><a href="">Как заказать</a></li>
+										<li><a href="">Вопрос ответ</a></li>
+										<li><a href="">Блог</a></li>
+										<li><a href="">Отзывы</a></li>
+									</ul>
+								</li>
+								<li class="has_list">
+									<a href=""><span>Покупателям</span><i></i></a>
+									<ul>
+										<li><a href="">Как заказать</a></li>
+										<li><a href="">Вопрос ответ</a></li>
+										<li><a href="">Блог</a></li>
+										<li><a href="">Отзывы</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href=""><span>Доставка и оплата</span></a>
+								</li>
+								<li><a href=""><span>Контакты</span></a></li>
+							</ul>
+						</div>
+						<a href="" class="favorites_btn"></a>
+						<div class="cart_mini_wr">
+							<a href="" class="cart_mini">Корзина (12)</a>
+						</div>
+						<div class="burger"></div>
+					</div>
+				</div>														
+			</div>
+		</header>
+		<div class="content_block_wr">
+			<div class="content_block_inner">					

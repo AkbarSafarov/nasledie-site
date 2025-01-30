@@ -1,0 +1,199 @@
+include _header.jade
+<link rel='stylesheet' href="/css/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="css/catalog.css">
+<h1>Корзина</h1>
+<div class="site-container">
+    <div class="site-container__inner">
+        <div class="site-container__inner__right no-left-col">
+            <section class="cart-block">
+                <div class="cart-block__inner block-width">
+                    <div class="cart-block__left">
+                        <div class="cart-block__products">
+                            <div class="cart-block__product-item swiper-slide">
+                                <div class="cart-block__product-image">
+                                    <img src="img/cart/cart-item1.png" alt="product1">
+                                </div>
+                                <div class="cart-block__product-info">
+                                    <div class="cart-block__product-infoLeft">
+                                        <div class="cart-block__product-status">Под заказ</div>
+                                        <div class="cart-block__product-name">
+                                            <a href="#">Икона Севастийских Мучеников</a>
+                                        </div>
+                                        <div class="cart-block__product-options">Арт. 3765, размер 22-28см,</div>
+                                    </div>
+                                    <div class="cart-block__product-infoRight">
+                                        <div class="cart-block__product-amount">
+                                            <div class="product-amount-wrapper">
+                                                <button class="minus">-</button>
+                                                <input type="text" value="1">
+                                                <button class="plus">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="cart-block__product-price">35 500 руб</div>
+                                    </div>
+                                    <div class="cart-block__product-delete">
+                                        <a href="javascript:void(0);">
+                                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.31947 3.63211C5.39708 1.5545 8.1595 0.410294 11.0977 0.410294C14.0358 0.410294 16.7982 1.5545 18.8758 3.63211C20.9534 5.70972 22.0977 8.47214 22.0977 11.4103C22.0977 14.3486 20.9534 17.1109 18.8758 19.1885C16.7982 21.2661 14.0358 22.4103 11.0977 22.4103C8.1595 22.4103 5.39708 21.2661 3.31947 19.1885C1.24187 17.1109 0.0976562 14.3486 0.0976562 11.4103C0.0976562 8.47214 1.24187 5.70972 3.31947 3.63211ZM6.33987 14.6487C5.92043 15.0683 5.92043 15.7485 6.33987 16.1679C6.54968 16.3777 6.82462 16.4826 7.09955 16.4826C7.37448 16.4826 7.64941 16.3777 7.85922 16.1679L11.0977 12.9295L14.3361 16.1681C14.5459 16.3777 14.8208 16.4826 15.0958 16.4826C15.3707 16.4826 15.6456 16.3777 15.8554 16.1681C16.2749 15.7485 16.2749 15.0683 15.8554 14.6489L12.6168 11.4103L15.8554 8.17186C16.2749 7.75224 16.2749 7.07213 15.8554 6.65268C15.4358 6.23306 14.7557 6.23306 14.3363 6.65268L11.0977 9.89111L7.85922 6.65268C7.43961 6.23323 6.75949 6.23306 6.34004 6.65268C5.92043 7.07213 5.92043 7.75224 6.34004 8.17186L9.57848 11.4103L6.33987 14.6487Z" fill="#D7B05F" fill-opacity="0.51"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-block__product-item swiper-slide">
+                                <div class="cart-block__product-image">
+                                    <img src="img/cart/cart-item2.png" alt="product2">
+                                </div>
+                                <div class="cart-block__product-info">
+                                    <div class="cart-block__product-infoLeft">
+                                        <div class="cart-block__product-status">В наличии</div>
+                                        <div class="cart-block__product-name">
+                                            <a href="#">Икона Севастийских Мучеников</a>
+                                        </div>
+                                        <div class="cart-block__product-options">Арт. 3765, размер 22-28см,</div>
+                                    </div>
+                                    <div class="cart-block__product-infoRight">
+                                        <div class="cart-block__product-amount">
+                                            <div class="product-amount-wrapper">
+                                                <button class="minus">-</button>
+                                                <input type="text" value="1">
+                                                <button class="plus">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="cart-block__product-price">35 500 руб</div>
+                                    </div>
+                                    <div class="cart-block__product-delete">
+                                        <a href="javascript:void(0);">
+                                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.31947 3.63211C5.39708 1.5545 8.1595 0.410294 11.0977 0.410294C14.0358 0.410294 16.7982 1.5545 18.8758 3.63211C20.9534 5.70972 22.0977 8.47214 22.0977 11.4103C22.0977 14.3486 20.9534 17.1109 18.8758 19.1885C16.7982 21.2661 14.0358 22.4103 11.0977 22.4103C8.1595 22.4103 5.39708 21.2661 3.31947 19.1885C1.24187 17.1109 0.0976562 14.3486 0.0976562 11.4103C0.0976562 8.47214 1.24187 5.70972 3.31947 3.63211ZM6.33987 14.6487C5.92043 15.0683 5.92043 15.7485 6.33987 16.1679C6.54968 16.3777 6.82462 16.4826 7.09955 16.4826C7.37448 16.4826 7.64941 16.3777 7.85922 16.1679L11.0977 12.9295L14.3361 16.1681C14.5459 16.3777 14.8208 16.4826 15.0958 16.4826C15.3707 16.4826 15.6456 16.3777 15.8554 16.1681C16.2749 15.7485 16.2749 15.0683 15.8554 14.6489L12.6168 11.4103L15.8554 8.17186C16.2749 7.75224 16.2749 7.07213 15.8554 6.65268C15.4358 6.23306 14.7557 6.23306 14.3363 6.65268L11.0977 9.89111L7.85922 6.65268C7.43961 6.23323 6.75949 6.23306 6.34004 6.65268C5.92043 7.07213 5.92043 7.75224 6.34004 8.17186L9.57848 11.4103L6.33987 14.6487Z" fill="#D7B05F" fill-opacity="0.51"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-block__cart-clear">
+                            <div class="cart-block__clear-btn">
+                                <a href="javascript:void(0);">Очистить корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-block__right">
+                        <div class="cart-block__cart-total">
+                            <div class="cart-block__total-item">
+                                <div class="title">Товары (2)</div>
+                                <div class="value">71 000 руб</div>
+                            </div>
+                            <div class="cart-block__total-item">
+                                <div class="title">Доставка</div>
+                                <div class="value">0 руб</div>
+                            </div>
+                            <div class="cart-block__total">
+                                <div class="cart-block__total-title">Итого</div>
+                                <div class="cart-block__total-summ">71 000 руб</div>
+                                <div class="cart-block__checkout-btn">
+                                    <a href="javascript:void(0);">Оформить заказ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recently-block">
+                <div class="recently-block__inner block-width">
+                    <div class="recently-block__title blocks-title">Вы ранее смотрели</div>
+                    <div class="recently-block__body">
+                        <div class="slider-wrap swiper">
+                            <div class="product-list swiper-wrapper">
+                                <div class="product-item swiper-slide">
+                                    <div class="product-item__stock buy">В наличии</div>
+                                    <div class="favorite_btn"></div>
+                                    <div class="product-item__image"><a href="#"><img src="img/pl_pic1.png"></a></div>
+                                    <div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+                                    <div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+                                    <div class="product-item__bottom">
+                                        <div class="product-item__price"><span>35 500</span> руб</div>
+                                        <button class="product-item__btn buy"><span>В корзину</span></button>
+                                    </div>
+                                </div>
+                                <div class="product-item swiper-slide">
+                                    <div class="product-item__stock buy">В наличии</div>
+                                    <div class="favorite_btn"></div>
+                                    <div class="product-item__image"><a href="#"><img src="img/pl_pic2.png"></a></div>
+                                    <div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+                                    <div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+                                    <div class="product-item__bottom">
+                                        <div class="product-item__price"><span>35 500</span> руб</div>
+                                        <button class="product-item__btn buy"><span>В корзину</span></button>
+                                    </div>
+                                </div>
+                                <div class="product-item swiper-slide">
+                                    <div class="product-item__stock buy">В наличии</div>
+                                    <div class="favorite_btn"></div>
+                                    <div class="product-item__image"><a href="#"><img src="img/pl_pic3.png"></a></div>
+                                    <div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+                                    <div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+                                    <div class="product-item__bottom">
+                                        <div class="product-item__price"><span>35 500</span> руб</div>
+                                        <button class="product-item__btn buy"><span>В корзину</span></button>
+                                    </div>
+                                </div>
+                                <div class="product-item swiper-slide">
+                                    <div class="product-item__stock buy">В наличии</div>
+                                    <div class="favorite_btn"></div>
+                                    <div class="product-item__image"><a href="#"><img src="img/pl_pic1.png"></a></div>
+                                    <div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+                                    <div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+                                    <div class="product-item__bottom">
+                                        <div class="product-item__price"><span>35 500</span> руб</div>
+                                        <button class="product-item__btn buy"><span>В корзину</span></button>
+                                    </div>
+                                </div>
+                                <div class="product-item swiper-slide">
+                                    <div class="product-item__stock buy">В наличии</div>
+                                    <div class="favorite_btn"></div>
+                                    <div class="product-item__image"><a href="#"><img src="img/pl_pic2.png"></a></div>
+                                    <div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+                                    <div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+                                    <div class="product-item__bottom">
+                                        <div class="product-item__price"><span>35 500</span> руб</div>
+                                        <button class="product-item__btn buy"><span>В корзину</span></button>
+                                    </div>
+                                </div>
+                                <div class="product-item swiper-slide">
+                                    <div class="product-item__stock buy">В наличии</div>
+                                    <div class="favorite_btn"></div>
+                                    <div class="product-item__image"><a href="#"><img src="img/pl_pic3.png"></a></div>
+                                    <div class="product-item__name"><a href="#">ИконаСевастийских Мучеников</a></div>
+                                    <div class="product-item__article">Арт. 3765, размер 22-28см,  </div>
+                                    <div class="product-item__bottom">
+                                        <div class="product-item__price"><span>35 500</span> руб</div>
+                                        <button class="product-item__btn buy"><span>В корзину</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recently-block__slider-controls">
+                            <div class="swiper-button-prev">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.7051 14.4332L6.45508 9.18323L11.7051 3.93323" stroke="#FAF9C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.86914 3.93298L12.1191 9.18298L6.86914 14.433" stroke="#FAF9C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    include _bottom_form.jade
+</div>
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="js/cart-scripts.js"></script>
+include _footer.jade

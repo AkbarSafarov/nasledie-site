@@ -1,0 +1,28 @@
+.p-l-r{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.p-l-r span {
+
+}
+.p-l-r input {
+    width: 75px;
+    height: 42px;
+    border: 1px solid #C6AB86;
+    text-align: center;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #C6AB86;
+    outline: none;
+}
+input.input-with-keypress-0 {}
+input.input-with-keypress-1 {}
+.p-l-r .slider-keypress {
+    width: 100%;
+    margin-top: 20px;
+}

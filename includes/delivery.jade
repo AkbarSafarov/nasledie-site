@@ -1,0 +1,180 @@
+include _header.jade
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.css" integrity="sha512-nF9G9AnUEVv+zx285OqwGE8c1gmkys3qV6iuDK5rVG/UuZLWRgGBy/tN5WzSXXuZDZ1YvwhJ9+a/DTj71L8Lrw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/cart.css">
+<div class="site-container">
+    <h1>Оформление заказа</h1>
+    <div class="site-container__inner">
+        <div class="site-container__inner__right no-left-col">
+            <section class="delivery-block">
+                <div class="delivery-block__inner block-width">
+                    <div class="delivery-block__left">
+                        <div class="delivery-block__title">Товар</div>
+                        <div class="delivery-block__products">
+                            <div class="delivery-block__product-item">
+                                <div class="delivery-block__product-image">
+                                    <img src="img/cart/cart-item1.png" alt="product1">
+                                </div>
+                                <div class="delivery-block__product-info">
+                                    <div class="delivery-block__product-status">Под заказ</div>
+                                    <div class="delivery-block__product-name">ИконаСевастийских Мучеников</div>
+                                    <div class="delivery-block__product-options">Арт. 3765, размер 22-28см,</div>
+                                </div>
+                            </div>
+                            <div class="delivery-block__product-item">
+                                <div class="delivery-block__product-image">
+                                    <img src="img/cart/cart-item2.png" alt="product2">
+                                </div>
+                                <div class="delivery-block__product-info">
+                                    <div class="delivery-block__product-status">Под заказ</div>
+                                    <div class="delivery-block__product-name">ИконаСевастийских Мучеников</div>
+                                    <div class="delivery-block__product-options">Арт. 3765, размер 22-28см,</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery-block__delivery">
+                            <div class="delivery-block__title">Доставка</div>
+                            <div class="delivery-block__delivery-options">
+                                <div class="delivery-block__sub-title">Выберите способ доставки:</div>
+                                <div class="delivery-block__options-list">
+                                    <div class="delivery-block__option-item">
+                                        <label>
+                                            <input type="radio" name="delivery-option">
+                                            <span>Самовывоз</span>
+                                        </label>
+                                    </div>
+                                    <div class="delivery-block__option-item">
+                                        <label>
+                                            <input type="radio" name="delivery-option">
+                                            <span>Нужна доставка</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery-block__payments">
+                            <div class="delivery-block__title">Оплата</div>
+                            <div class="delivery-block__payments-options">
+                                <div class="delivery-block__sub-title">Выберите способ оплаты:</div>
+                                <div class="delivery-block__options-list">
+                                    <div class="delivery-block__option-item">
+                                        <label>
+                                            <input type="radio" name="payment-option">
+                                            <span>Оплата в магазине на Б.Якиманке</span>
+                                        </label>
+                                    </div>
+                                    <div class="delivery-block__option-item">
+                                        <label>
+                                            <input type="radio" name="payment-option">
+                                            <span>Картой на сайте</span>
+                                        </label>
+                                    </div>
+                                    <div class="delivery-block__option-item">
+                                        <label>
+                                            <input type="radio" name="payment-option">
+                                            <span>СПБ</span>
+                                        </label>
+                                    </div>
+                                    <div class="delivery-block__option-item">
+                                        <label>
+                                            <input type="radio" name="payment-option">
+                                            <span>По счету для юр лиц</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery-block__right">
+                        <div class="cart-block__cart-total">
+                            <div class="cart-block__total-item">
+                                <div class="title">Товары (2)</div>
+                                <div class="value">71 000 руб</div>
+                            </div>
+                            <div class="cart-block__total-item">
+                                <div class="title">Доставка</div>
+                                <div class="value">0 руб</div>
+                            </div>
+                            <div class="cart-block__total">
+                                <div class="cart-block__total-title">Итого</div>
+                                <div class="cart-block__total-summ">71 000 руб</div>
+                                <div class="cart-block__checkout-btn">
+                                    <a href="javascript:void(0);">Оформить заказ</a>
+                                </div>
+                                <div class="cart-block__buy-oneclick">
+                                    <a href="javascript:void(0);" data-remodal-target="buy-one-click">Купить в один клик</a>
+                                </div>
+                                <div class="cart-block__back">
+                                    <a href="javascript:void(0);">Вернуться в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="order-form">
+                <div class="order-form__inner block-width">
+                    <div class="order-form__title">Данные покупателя</div>
+                    <div class="order-form__list">
+                        <div class="order-form__field-item">
+                            <input type="text" placeholder="Введите имя">
+                        </div>
+                        <div class="order-form__field-item">
+                            <input type="text" placeholder="Введите email">
+                        </div>
+                        <div class="order-form__field-item">
+                            <input type="text" placeholder="Введите телефон">
+                        </div>
+                        <div class="order-form__field-item policity-item">
+                            <label>
+                                <input type="checkbox" checked>
+                                <span>Я согласна на <a href="#">обработку персональных данных</a></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<div class="remodal" data-remodal-id="buy-one-click" role="dialog" data-remodal-options="hashTracking: false">
+    <button data-remodal-action="close" class="close-button">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.3">
+                <line x1="30.6329" y1="10.5617" x2="10.5626" y2="30.632" stroke="#781F1C" stroke-width="2"/>
+                <line x1="29.5468" y1="29.9433" x2="9.83689" y2="10.2333" stroke="#781F1C" stroke-width="2"/>
+            </g>
+        </svg>
+    </button>
+    <div class="popup-form">
+       <div class="popup-form__title">Купить в один клик</div>
+       <div class="popup-form__body">
+        <form>
+            <div class="popup-form__form-field tpl-field">
+                <input type="text" placeholder="Введите имя">
+            </div>
+            <div class="popup-form__form-field type-email tpl-field required">
+                <input type="text" placeholder="Введите email">
+            </div>
+            <div class="popup-form__form-field tpl-field type-phone required">
+                <input type="text" placeholder="Введите телефон">
+            </div>
+            <div class="popup-form__form-field policity-field tpl-field">
+                <label>
+                    <input type="checkbox" checked>
+                    <span>Я согласна на <a href="#">обработку персональных данных</a></span>
+                </label>
+            </div>
+            <div class="popup-form__form-field submit-button">
+                <button class="tpl-form-button">Отправить</button>
+            </div>
+        </form>
+       </div>
+    </div>   
+</div>
+
+
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="js/cart-scripts.js"></script>
+include _footer.jade
