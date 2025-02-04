@@ -54,7 +54,7 @@ a {
 }
 
 .site-links {
-    padding: 30px 23px 0 0;
+    padding: 25px 23px 0 0;
     &__items {
         border-top: 1px solid #D4C6A4;
         position: relative;
@@ -70,12 +70,13 @@ a {
         }
         &:first-child {
             border-top: none;
+            padding-top: 0;
         }
         &:last-child {
             a {
-                  strong {
-                      text-transform: inherit;
-                  }
+                strong {
+                    text-transform: inherit;
+                }
             }
         }
         a {
@@ -89,6 +90,9 @@ a {
             strong {
                 font-weight: bold;
                 text-transform: uppercase;
+            }
+            &:hover {
+                text-decoration: underline;
             }
         }
     }

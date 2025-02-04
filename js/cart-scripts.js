@@ -1,4 +1,9 @@
 $(function(){
+
+    $(function() {
+		$('.main_reviews .main_reviews_items .reviews_page_question .text .text_in').matchHeight();
+	});
+
     const SWIPER = new Swiper('.swiper.slider-wrap', {
         slidesPerView: 4,
         loop: true,
@@ -29,6 +34,9 @@ $(function(){
             1200: {
                 slidesPerView: 4
             }
+        },
+        autoplay: {
+            delay: 5000,
         }
     });
     
@@ -63,6 +71,9 @@ $(function(){
             1100: {
                 slidesPerView: 3
             }
+        },
+        autoplay: {
+            delay: 5000,
         }
     });
 
@@ -102,6 +113,9 @@ $(function(){
                 1200: {
                     slidesPerView: 4
                 }
+            },
+            autoplay: {
+                delay: 5000,
             }
         });
     });
@@ -134,9 +148,12 @@ $(function(){
                 slidesPerView: 2.5
             },
             1100: {
-                spaceBetween: 20,
+                spaceBetween: 40,
                 slidesPerView: 3
             }
+        },
+        autoplay: {
+            delay: 5000,
         }
     });
 
@@ -167,6 +184,9 @@ $(function(){
             1100: {
                 slidesPerView: 2
             }
+        },
+        autoplay: {
+            delay: 5000,
         }
     });
 
@@ -214,6 +234,9 @@ $(function(){
             1100: {
                 slidesPerView: 3
             }
+        },
+        autoplay: {
+            delay: 5000,
         }
     });
 
@@ -250,6 +273,9 @@ $(function(){
             1100: {
                 slidesPerView: 3
             }
+        },
+        autoplay: {
+            delay: 5000,
         }
     });
 

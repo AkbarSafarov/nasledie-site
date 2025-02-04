@@ -235,6 +235,9 @@
             font-size: 0;
             text-align: center;
             padding-bottom: 6px;
+            a {
+                display: block;
+            }
         }
         &__name {
           padding-bottom: 14px;
@@ -284,6 +287,7 @@
             border-radius: 4px;
             position: relative;
             padding: 2px 9px 2px 38px;
+            transition: all 0.3s ease;
             span {
               font-family: 'Bitter';
               font-style: normal;
@@ -303,6 +307,9 @@
                     background: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.34961 3.26703L3.90961 3.53703L4.63186 12.1418C4.68961 12.8445 5.27686 13.3838 5.98186 13.3815H14.1636C14.8364 13.383 15.4071 12.888 15.5024 12.222L16.2141 7.30353C16.2936 6.75378 15.9119 6.24378 15.3629 6.16428C15.3149 6.15753 4.16011 6.15378 4.16011 6.15378' stroke='%23E5CF49' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.8809 8.92572H12.9606' stroke='%23E5CF49' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.65312 15.9815C5.87887 15.9815 6.06112 16.1645 6.06112 16.3895C6.06112 16.6153 5.87887 16.7983 5.65312 16.7983C5.42737 16.7983 5.24512 16.6153 5.24512 16.3895C5.24512 16.1645 5.42737 15.9815 5.65312 15.9815Z' fill='%23E5CF49' stroke='%23E5CF49' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.1131 15.9815C14.3388 15.9815 14.5218 16.1645 14.5218 16.3895C14.5218 16.6153 14.3388 16.7983 14.1131 16.7983C13.8873 16.7983 13.7051 16.6153 13.7051 16.3895C13.7051 16.1645 13.8873 15.9815 14.1131 15.9815Z' fill='%23E5CF49' stroke='%23E5CF49' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% 50% no-repeat;
                 }
             }
+            &:hover {
+                background: #410f0e;
+            }
         }
     }
 }
@@ -312,6 +319,9 @@
   right: 14px;
   width: 24px;
   height: 24px;
-  background: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.03725 11.6926C1.95761 8.34256 3.21937 4.51356 6.75815 3.38056C8.61961 2.78356 10.6743 3.13556 12.2218 4.29256C13.6858 3.16756 15.8159 2.78756 17.6753 3.38056C21.2141 4.51356 22.4839 8.34256 21.4053 11.6926C19.7249 17.0026 12.2218 21.0926 12.2218 21.0926C12.2218 21.0926 4.77394 17.0646 3.03725 11.6926Z' stroke='%23A38266' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.2471 6.79419C17.3237 7.14019 18.0844 8.09519 18.1759 9.21619' stroke='%23A38266' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% 50% no-repeat;
+  background: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.75014 11.863C2.6705 8.51297 3.93227 4.68397 7.47104 3.55097C9.3325 2.95397 11.3871 3.30597 12.9347 4.46297C14.3987 3.33797 16.5288 2.95797 18.3882 3.55097C21.927 4.68397 23.1968 8.51297 22.1182 11.863C20.4378 17.173 12.9347 21.263 12.9347 21.263C12.9347 21.263 5.48683 17.235 3.75014 11.863Z' stroke='%23A38266' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.9595 6.96466C18.0361 7.31066 18.7968 8.26566 18.8883 9.38666' stroke='%23A38266' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 0 0 no-repeat;
   cursor: pointer;
+  &:hover {
+    background: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.75014 11.863C2.6705 8.51297 3.93227 4.68397 7.47104 3.55097C9.3325 2.95397 11.3871 3.30597 12.9347 4.46297C14.3987 3.33797 16.5288 2.95797 18.3882 3.55097C21.927 4.68397 23.1968 8.51297 22.1182 11.863C20.4378 17.173 12.9347 21.263 12.9347 21.263C12.9347 21.263 5.48683 17.235 3.75014 11.863Z' stroke='%23781f1b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.9595 6.96466C18.0361 7.31066 18.7968 8.26566 18.8883 9.38666' stroke='%23781f1b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 0 0 no-repeat;
+  }
 }
