@@ -2,14 +2,7 @@
 
 html, body {margin: 0;height: 100%;min-height: 100%;}
 
-:root {
-    --primary-1: #781f1c;
-    --primary-dark: #410f0e;
-    --primary-braun: #68320c;
-    --gold-chiaro: #e5cf49;
-    --gold-1: #eaddad;
-    --gold-dark: #c6ab86;
-}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -19,6 +12,13 @@ html, body {margin: 0;height: 100%;min-height: 100%;}
 @font-face {
     font-family: 'Preslav';
     src: url('../fonts/preslav.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Balkara Free Condensed';
+    src: url('../fonts/balkara_condensed.ttf');
     font-style: normal;
     font-weight: normal;
 }
@@ -35,7 +35,7 @@ html, body {margin: 0;height: 100%;min-height: 100%;}
     --third-family: "Georgia", sans-serif;
     --font3: "Geometria", sans-serif;
     --font4: "Preslav", sans-serif;
-    --font5: "Balkara Free Condensed - npoekmu.me", sans-serif;
+    --font5: "Balkara Free Condensed", sans-serif;
     --font6: "Alumni Sans", sans-serif;
     --font7: "Noto Serif JP", sans-serif;
     --font8: "Open Sans", sans-serif;
@@ -1089,7 +1089,17 @@ img, textarea, input, table {
             @media all and (max-width: 767px){
                 background: #6d120c;
                 &:before {
-                    display: none;
+                    //display: none;
+                }
+            }
+        }
+
+        .header__top {
+
+            .address {
+
+                @media all and (min-width: 768px) {
+                    flex: 0 0 230px;
                 }
             }
         }
@@ -1223,6 +1233,10 @@ img, textarea, input, table {
         opacity: 0;
         visibility: hidden;
         transition: all .3s;
+
+        @media all and (max-width: 1000px){
+            width: 732px;
+        }
 
         ul {
             flex: 0 0 calc(33.33% - 30px);
