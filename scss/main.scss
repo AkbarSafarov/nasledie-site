@@ -957,17 +957,34 @@ img, textarea, input, table {
 
         .left_img {
             position: absolute;
-            top: 25px;
-            left: 36px;
+            top: -41px;
+            left: 42px;
             width: 276px;
 
         }
 
         .right_img {
             position: absolute;
-            top: 23px;
-            right: -10px;
+            top: -39px;
+            right: -16px;
             width: 393px;
+        }
+
+        @media all and (max-width: 1200px) {
+            .left_img {
+                position: absolute;
+                top: 0;
+                left: 10px;
+                width: 240px;
+
+            }
+
+            .right_img {
+                position: absolute;
+                top: 23px;
+                right: -10px;
+                width: 300px;
+            }
         }
 
         @media all and (max-width: 1000px) {

@@ -116,79 +116,7 @@ $(function(){
         }
     });
 
-    $('.quiz_block__item').on('click', function(){
-        if ($(this).hasClass('active')){
-            $(this).removeClass('active');
-        } else {
-            $(this).siblings('.quiz_block__item').removeClass('active');
-            $(this).addClass('active');
-        }
-    });
-
-    /*$('#infoTabs').responsiveTabs({
-        rotate: false,
-        startCollapsed: 'accordion',
-        collapsible: 'accordion',
-        setHash: false,
-        scrollToAccordion: false
-    });*/
-
-    const hash = '#tabs-0';
     
-    $("#infoTabs ul.product-tabs > li a[href='" + hash + "']").click();
-
-    /*$('.algoritmTabs').responsiveTabs({
-        rotate: false,
-        startCollapsed: 'accordion',
-        collapsible: 'accordion',
-        setHash: false,
-        scrollToAccordion: false
-    });*/
-
-    let numbers = document.querySelectorAll('.animate-number');
-
-    numbers.forEach(function (number) {
-        let numberTop = number.getBoundingClientRect().top,
-            start = +number.innerHTML,
-            end = +number.dataset.max;
-
-        window.addEventListener('scroll', function onScroll() {
-            if (window.pageYOffset > numberTop - window.innerHeight / 2) {
-                this.removeEventListener('scroll', onScroll);
-                let interval = setInterval(function () {
-                    number.innerHTML = ++start;
-                    if (start == end) {
-                        clearInterval(interval);
-                    }
-                }, 15);
-            }
-        });
-    });
-
-    $('.certificates').each(function(){
-        const slider = $(this).find('.swiper');
-        const sliderId = slider.data('id');
-        const sliderClass = '.' + sliderId;
-        const arrow = slider.data('arrow');    
-
-        const newProductsSwiper = new Swiper(sliderClass, {
-            slidesPerView: "auto",
-            spaceBetween: 28,
-            navigation: {
-                nextEl: '.swiper-' + arrow + '-next',
-                prevEl: '.swiper-' + arrow + '-prev',
-              },
-            lazy: true
-        });
-    })  
-
-
-    /*lightGallery(document.getElementById('swiperBlockGall'), {
-        animateThumb: false,
-        zoomFromOrigin: false,
-        allowMediaOverlap: true,
-        toggleThumb: false,
-    });*/
 
 
     $('.type-phone input').on('blur', function(){
@@ -239,7 +167,8 @@ $(function(){
             }
         } else {
             phoneWrapper.removeClass('incorrect-phone');
-            phoneWrapper.remove('empty_number');
+            phoneWrapper.removeClass('error');
+            phoneWrapper.find('.empty_number').remove();
         }
     });
 
