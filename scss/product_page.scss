@@ -131,12 +131,19 @@
                 text-transform: uppercase;
                 color: #D7B05F;
             }
+            &:hover {
+                background: #410f0e;
+            }
         }
         .favorite_btn {
             position: static;
             width: 21px;
             height: 20px;
             background: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.41323 9.63635C0.333586 6.28635 1.59535 2.45735 5.13413 1.32435C6.99558 0.727347 9.05023 1.07935 10.5978 2.23635C12.0618 1.11135 14.1919 0.731347 16.0513 1.32435C19.5901 2.45735 20.8599 6.28635 19.7813 9.63635C18.1009 14.9463 10.5978 19.0363 10.5978 19.0363C10.5978 19.0363 3.14992 15.0083 1.41323 9.63635Z' stroke='%23D7B05F' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.623 4.73804C15.6997 5.08404 16.4604 6.03904 16.5519 7.16004' stroke='%23D7B05F' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 0 0 no-repeat;
+            cursor: pointer;
+            &:hover {
+                background: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.41323 9.63635C0.333586 6.28635 1.59535 2.45735 5.13413 1.32435C6.99558 0.727347 9.05023 1.07935 10.5978 2.23635C12.0618 1.11135 14.1919 0.731347 16.0513 1.32435C19.5901 2.45735 20.8599 6.28635 19.7813 9.63635C18.1009 14.9463 10.5978 19.0363 10.5978 19.0363C10.5978 19.0363 3.14992 15.0083 1.41323 9.63635Z' stroke='%23781f1b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.623 4.73804C15.6997 5.08404 16.4604 6.03904 16.5519 7.16004' stroke='%23781f1b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 0 0 no-repeat;
+            }
         }
     }
     .product_page__buy-oneclick {

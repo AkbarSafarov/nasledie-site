@@ -360,6 +360,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        pointer-events: none;
         div {
             width: 26px;
             height: 26px;
@@ -370,6 +371,7 @@
             justify-content: center;
             position: static;
             margin: 0;
+            pointer-events: all;
         }
     }
 }
@@ -794,6 +796,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            pointer-events: none;
             div {
                 width: 26px;
                 height: 26px;
@@ -804,6 +807,7 @@
                 justify-content: center;
                 position: static;
                 margin: 0;
+                pointer-events: all;
             }
         }
         .slider-item {
