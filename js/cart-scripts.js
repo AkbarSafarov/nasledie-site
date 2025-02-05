@@ -36,7 +36,7 @@ $(function(){
             }
         },
         autoplay: {
-            delay: 5000,
+            delay: 3000,
         }
     });
     
@@ -73,7 +73,7 @@ $(function(){
             }
         },
         autoplay: {
-            delay: 5000,
+            delay: 3000,
         }
     });
 
@@ -115,7 +115,7 @@ $(function(){
                 }
             },
             autoplay: {
-                delay: 5000,
+                delay: 3000,
             }
         });
     });
@@ -153,7 +153,7 @@ $(function(){
             }
         },
         autoplay: {
-            delay: 5000,
+            delay: 3000,
         }
     });
 
@@ -186,7 +186,7 @@ $(function(){
             }
         },
         autoplay: {
-            delay: 5000,
+            delay: 3000,
         }
     });
 
@@ -236,7 +236,7 @@ $(function(){
             }
         },
         autoplay: {
-            delay: 5000,
+            delay: 3000,
         }
     });
 
@@ -275,7 +275,7 @@ $(function(){
             }
         },
         autoplay: {
-            delay: 5000,
+            delay: 3000,
         }
     });
 
