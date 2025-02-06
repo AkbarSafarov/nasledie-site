@@ -976,12 +976,13 @@
 
             }
             .text {
-                font-size: inherit;
                 font-size: 12px;
                 line-height: 18px;
                 font-weight: 600;
                 color: #410F0E;
                 margin-top: 10px;
+                font-family: 'Bitter';
+                font-style: italic;
             }
         }
     }
@@ -1008,11 +1009,12 @@
             }
             .text {
                 margin-top: 10px;
-                font-size: inherit;
                 font-size: 12px;
                 line-height: 18px;
                 font-weight: 600;
                 color: #410F0E;
+                font-family: 'Bitter';
+                font-style: italic;
             }
         }
     }
@@ -1215,6 +1217,7 @@
             background: #EADDAD;
             outline: none;
             resize: none;
+            font-family: 'Bitter';
             @media all and (max-width: 980px) {
                 padding: 10px 20px;
                 line-height: 1.4;
@@ -1263,6 +1266,7 @@
             line-height: 26px;
             color: #781F1C;
             transition: all 0.3s ease;
+            font-family: 'Bitter';
             &:hover {
                 background: #781F1C;
                 color: #D7B05F;
@@ -1312,6 +1316,7 @@
             line-height: 26px;
             color: #EADDAD;
             border: 1px solid #661C19;
+            text-transform: uppercase;
             &:hover {
                 background: none;
                 color: #661C19;
