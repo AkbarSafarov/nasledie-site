@@ -1,8 +1,8 @@
 $(function(){
 
-    $(function() {
-		$('.main_reviews .main_reviews_items .reviews_page_question .text .text_in').matchHeight();
-	});
+    if($('.main_reviews .main_reviews_items .reviews_page_question .text .text_in').length){
+        $('.main_reviews .main_reviews_items .reviews_page_question .text .text_in').matchHeight();
+    }
 
     const SWIPER = new Swiper('.swiper.slider-wrap', {
         slidesPerView: 4,

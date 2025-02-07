@@ -4,7 +4,7 @@ include _header.jade
 <div class="site-container">
     <h1>Оформление заказа</h1>
     <div class="site-container__inner">
-        <div class="site-container__inner__right no-left-col">
+        <form class="site-container__inner__right no-left-col">
             <section class="delivery-block">
                 <div class="delivery-block__inner block-width">
                     <div class="delivery-block__left">
@@ -98,7 +98,7 @@ include _header.jade
                                 <div class="cart-block__total-title">Итого</div>
                                 <div class="cart-block__total-summ">71 000 руб</div>
                                 <div class="cart-block__checkout-btn">
-                                    <a href="javascript:void(0);">Оформить заказ</a>
+                                    <button class="tpl-form-button">Оформить заказ</button>
                                 </div>
                                 <div class="cart-block__buy-oneclick">
                                     <a href="javascript:void(0);" data-remodal-target="buy-one-click">Купить в один клик</a>
@@ -119,22 +119,22 @@ include _header.jade
                         <div class="order-form__field-item">
                             <input type="text" placeholder="Введите имя">
                         </div>
-                        <div class="order-form__field-item">
+                        <div class="order-form__field-item tpl-field type-email required">
                             <input type="text" placeholder="Введите email">
                         </div>
-                        <div class="order-form__field-item">
+                        <div class="order-form__field-item tpl-field type-phone required">
                             <input type="text" placeholder="Введите телефон">
                         </div>
                         <div class="order-form__field-item policity-item">
                             <label>
                                 <input type="checkbox" checked>
-                                <span>Я согласна на <a href="#">обработку персональных данных</a></span>
+                                <span>Я согласен на <a href="#">обработку персональных данных</a></span>
                             </label>
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
+        </form>
     </div>
 </div>
 

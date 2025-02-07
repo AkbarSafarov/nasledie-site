@@ -251,7 +251,7 @@
     }
     &__checkout-btn {
         margin-top: 20px;
-        a {
+        a,button {
             display: block;
             text-decoration: none;
             text-align: center;
@@ -266,6 +266,9 @@
             font-family: 'Georgia';
             text-transform: uppercase;
             border: 1px solid #661C19;
+            border: none;
+            cursor: pointer;
+            width: 100%;
             &:hover {
                 background: none;
                 color: #661C19;

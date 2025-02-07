@@ -137,6 +137,14 @@ $(function(){
         }
     });
 
+    $('.tpl-field input').on('input', function(){
+        let phoneWrapper = $(this).parents('.tpl-field'),
+            thisNumber = $(this).val();
+        if (thisNumber && phoneWrapper.hasClass('error')) {
+            phoneWrapper.find('.error_text_r').remove();
+        }
+    });
+
     $('input').on('blur', function(){
         if ($(this).parents('.tpl-field').hasClass('error')){
             $(this).parents('.tpl-field').removeClass('error');
@@ -179,22 +187,22 @@ $(function(){
             if ($(this).hasClass('required') && valueInput == ''){
                 $(this).addClass('error');
                 if (!$(this).find('.error_text').length) {
-                    $(this).append('<div class="error_text">это поле обязательно для заполнения</div>');
+                    $(this).append('<div class="error_text error_text_r">это поле обязательно для заполнения</div>');
                 }
-            }
+            } 
 
             var valueTextarea = $(this).find('textarea').val();
             if ($(this).hasClass('required') && valueTextarea == ''){
                 $(this).addClass('error');
                 if (!$(this).find('.error_text').length) {
-                    $(this).append('<div class="error_text">это поле обязательно для заполнения</div>');
+                    $(this).append('<div class="error_text error_text_r">это поле обязательно для заполнения</div>');
                 }
             }
 
             if ($(this).hasClass('no_checked')) {
                 $(this).addClass('error');
                 if (!$(this).find('.error_text').length) {
-                    $(this).append('<div class="error_text">это поле обязательно для заполнения</div>');
+                    $(this).append('<div class="error_text error_text_r">это поле обязательно для заполнения</div>');
                 }
             }
 
@@ -207,7 +215,7 @@ $(function(){
                 if (check == false) {
                     $(this).parents('.tpl-field').addClass('error');
                     if (!$(this).parents('.tpl-field').find('.error_text').length) {
-                        $(this).parents('.tpl-field').append('<div class="error_text">это поле обязательно для заполнения</div>');
+                        $(this).parents('.tpl-field').append('<div class="error_text error_text_r">это поле обязательно для заполнения</div>');
                     }
                 } else {
                     if ($(this).parents('.tpl-field').find('.error_text').length) {
