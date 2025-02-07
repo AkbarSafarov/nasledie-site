@@ -8,11 +8,14 @@ h1 {
 }
 
 a {
-    cursor: pointer;
+    cursor: pointer !important;
     text-decoration: underline;
     &:hover {
         text-decoration: none;
     }
+}
+button {
+    cursor: pointer;
 }
 .hide {
     display: none;
