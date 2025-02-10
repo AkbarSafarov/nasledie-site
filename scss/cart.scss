@@ -562,6 +562,11 @@
         @media all and (max-width: 640px) {
             gap: 11px;
         }
+        .cart-block__checkout-btn {
+            @media all and (max-width: 980px) {
+                margin: 0px;
+            }
+        }
     }
     &__field-item {
         width: calc(33.3% - 7.34px);
@@ -1339,6 +1344,7 @@
         position: relative;
         input {
             padding: 11px 12px;
+            padding-right: 80px;
             background: rgba(#fff, .5);
             border-radius: 5px;
             box-shadow: 0px 2px 27px 0px #00000026;
@@ -1355,6 +1361,23 @@
                 color: #68320C;
             }
         }
+        .lang-change-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 50px;
+            a {
+                font-family: 'Georgia';
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                text-decoration: none;
+                color: #68320C;
+                &:hover {
+                    color: #E5CF49;
+                }
+            }
+        }
         button {
             position: absolute;
             width: 24px;
@@ -1367,6 +1390,14 @@
             outline: none;
             background: none;
             padding: 0;
+            &:hover {
+                svg circle, svg path{
+                    stroke: #68320C;
+                }
+            }
+            svg {
+                transition: all 0.3s ease;
+            }
         }
     }
 }
@@ -1374,7 +1405,7 @@
 
 /* search-results BEGIN */
 .search-results {
-    
+    min-height: 800px;
     &__inner {
 
         .product-list {
@@ -1534,3 +1565,9 @@
     }
 }
 /* remodal END */
+
+.content_block_wr .content_block_inner:has(.delivery-page), .content_block_wr .content_block_inner:has(.search-page) {
+    @media all and (min-width: 981px) {
+        background: url('../img/top_bg.png') 50% 0 no-repeat, url('../img/bottom_bg.png') left 50% bottom -40% no-repeat #faf9c3;
+    }
+}

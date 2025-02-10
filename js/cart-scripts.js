@@ -298,11 +298,11 @@ $(function(){
 
     resizeController(980, function(){
 		$('.delivery-block__right').insertAfter('.delivery-block__products')
-	
+	    $('.cart-block__checkout-btn').appendTo('.order-form__list')
 	}, function(){
 	
 		$('.delivery-block__right').appendTo('.delivery-block__inner')
-	
+	    $('.cart-block__checkout-btn').insertBefore('.cart-block__buy-oneclick')
 	});
 
     $('.main_tabs .shop-product-tabs .active-tab a').on('click', function(e){
