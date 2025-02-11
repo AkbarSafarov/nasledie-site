@@ -134,7 +134,7 @@ include _header.jade
 		</div>
 	</div>
 </div>
-<div class="remodal" data-remodal-id="reviews-page-click" role="dialog" data-remodal-options="hashTracking: false">
+<div class="remodal remodal-reviews" data-remodal-id="reviews-page-click" role="dialog" data-remodal-options="hashTracking: false">
 	<button data-remodal-action="close" class="close-button"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3"><line x1="30.6329" y1="10.5617" x2="10.5626" y2="30.632" stroke="#781F1C" stroke-width="2"/><line x1="29.5468" y1="29.9433" x2="9.83689" y2="10.2333" stroke="#781F1C" stroke-width="2"/></g></svg></button>
 	<div class="popup-form">
 		<div class="popup-form__title">Оставить отзыв</div>
@@ -146,9 +146,16 @@ include _header.jade
 				<div class="tpl-field popup-form__form-field  type-email required">
 					<input type="text" placeholder="Введите email">
 				</div>
-				<div class="tpl-field popup-form__form-field type-phone required">
-					<input type="text" placeholder="Введите телефон">
+				<div class="tpl-field popup-form__form-field type-textarea">
+					<textarea placeholder="Введите текст отзыва"></textarea>
 				</div>
+				<div class="tpl-field file-upload">
+					<label>
+						<input type="file" name="file">
+						<span>Прикрепить файл</span>
+					</label>
+				</div>
+				<div class="tpl-field popup-form__form-field type-textarea nopad"></div>
 				<div class="tpl-field popup-form__form-field policity-field required">
 					<label>
 						<input type="checkbox" checked>
@@ -160,7 +167,12 @@ include _header.jade
 				</div>
 			</form>
 		</div>
-	</div>   
+	</div> 
+	<div class="popup-form-thanks">
+		<div class="popup-form-thanks_title">Заголовок</div>
+		<div class="popup-form-thanks_body">Ваше сообщение отправлено</div>
+		<div class="popup-form-thanks_link"><a href="#">Кнопка</a></div>
+	</div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js" integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/swiper-bundle.min.js"></script>

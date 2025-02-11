@@ -349,6 +349,9 @@
     &__body {
         box-sizing: border-box;
         position: relative;
+        .main_reviews_in {
+            display: flex;
+        }
     }
     .slider-wrap5 {
         overflow: hidden;
@@ -382,6 +385,10 @@
         }
     }
     .main_reviews_items {
+        height: auto;
+        display: flex;
+        position: relative;
+        margin-bottom: 8px;
         .reviews_page_question {
             background: #FCF5CD;
             /*box-shadow: 0px 2px 27px rgba(0, 0, 0, 0.15);*/
@@ -444,12 +451,14 @@
             }
         }
         .reviews_page_answer {
+            position: absolute;
+            right: 8px;
+            left: 8px;
+            bottom: -8px;
             border-right: 1px solid #af755c;
             border-bottom: 1px solid #af755c;
             border-left: 1px solid #af755c;
             height: 8px;
-            margin-right: 8px;
-            margin-left: 8px;
         }
     }
 }

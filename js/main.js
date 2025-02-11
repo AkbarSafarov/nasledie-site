@@ -231,6 +231,9 @@ $(function(){
         } else {
              e.preventDefault();
             //thpopup();
+            $(this).closest('.remodal.remodal-reviews').addClass('remodal-send');
+            $(this).closest('.popup-form').hide();
+            $('.popup-form-thanks').show();
         }
     });
 

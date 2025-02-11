@@ -1,8 +1,9 @@
 $(function(){
 
-    if($('.main_reviews .main_reviews_items .reviews_page_question .text .text_in').length){
-        $('.main_reviews .main_reviews_items .reviews_page_question .text .text_in').matchHeight();
-    }
+    $(".file-upload input[type=file]").change(function(){
+            var filename = $(this).val().replace(/.*\\/, "");
+            $("#filename").val(filename);
+    });
 
     const SWIPER = new Swiper('.swiper.slider-wrap', {
         slidesPerView: 4,
@@ -151,9 +152,6 @@ $(function(){
                 spaceBetween: 40,
                 slidesPerView: 3
             }
-        },
-        autoplay: {
-            delay: 3000,
         }
     });
 
@@ -184,9 +182,6 @@ $(function(){
             1100: {
                 slidesPerView: 2
             }
-        },
-        autoplay: {
-            delay: 3000,
         }
     });
 
