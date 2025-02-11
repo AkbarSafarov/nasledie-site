@@ -4,6 +4,20 @@ $(function(){
         $(this).parents('.catalog_block_header').toggleClass('opened');
     })
 
+    $('.btn_catalog').on('click', function(){
+        $(this).parents('.panel_fixed').toggleClass('opened');
+    })
+
+    
+
+    $('.btn_search').on('click', function(){
+        $('html, body').animate({
+            scrollTop: 0
+        },500);
+        $('.search_block form input').focus();
+    })
+    
+
     $('.slider_block_wr').each(function(){
         const slider = $(this).find('.swiper');
         const sliderId = slider.data('id');
@@ -102,7 +116,7 @@ $(function(){
     });
 
     $(document).on('click touchstart', function(e){
-        if( $(e.target).closest(menuBtn).length || $(e.target).closest(menuWrapper).length || $(e.target).closest('.catalog_block_header').length) 
+        if( $(e.target).closest(menuBtn).length || $(e.target).closest(menuWrapper).length || $(e.target).closest('.catalog_block_header').length || $(e.target).closest('.panel_fixed').length) 
           return;
         if (menuBtn.hasClass(openedMenu)){
             menuWrapper.removeClass(openedMenu);
@@ -113,6 +127,10 @@ $(function(){
 
         if($('.catalog_block_header').hasClass('opened')){
             $('.catalog_block_header').removeClass('opened');
+        }
+
+        if($('.panel_fixed').hasClass('opened')){
+            $('.panel_fixed').removeClass('opened');
         }
     });
 

@@ -9,10 +9,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site_styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.1.0/nouislider.min.css">
+<link rel="stylesheet" href="css/remodal-default-theme.css"/>
 <link rel='stylesheet' id='pmt-lightgallery-css' href='//cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css?ver=1.0.0' media='' />
-<script src="//cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js?ver=1.0.0"></script>
-<script src="js/site_main.js"></script>
+<link rel="stylesheet" href="css/site_styles.css">
+<link rel='stylesheet' href="css/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="css/range_slider.css">
+<link rel="stylesheet" href="css/catalog.css">
+<link rel="stylesheet" href="css/main_page.css">
+<link rel="stylesheet" href="css/news_page.css">
+<link rel="stylesheet" href="css/news_page_in.css">
+<link rel="stylesheet" href="css/product_page.css">
+<link rel="stylesheet" href="css/reviews_page.css">
 </head>
 <body>	
 <body>	
@@ -186,9 +195,7 @@
 <div class="content_block_inner">					
 <div class="path_block">
 <a href="">Главная</a><span> / </span>Каталог
-</div><link rel='stylesheet' href="css/swiper-bundle.min.css"/>
-<link rel="stylesheet" href="css/cart.css">
-<h1 style="text-align: center;">О МАСТЕРСКОЙ</h1>
+</div><h1 style="text-align: center;">О МАСТЕРСКОЙ</h1>
 <div class="site-container">
 <div class="site-container__inner">
 <div class="site-container__inner__right no-left-col">
@@ -324,9 +331,7 @@
 </form>
 </div>
 </div>
-</div></div>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/cart-scripts.js"></script></div>
+</div></div></div>
 </div>
 <footer class="footer">
 <div class="block_inner">
@@ -389,7 +394,7 @@
 <div class="yandex_block">
 <div class="name">Отзывы на Яндекс.картах</div>
 <div class="image">
-<img src="img/ya.png" alt="">
+<iframe src="https://yandex.ru/sprav/widget/rating-badge/41884959120" width="150" height="50" frameborder="0"></iframe>
 </div>
 </div>
 <div class="copy">© Наследие, 2011-2025г. <br>  Все права защищены. <br>Копирование фото материалов и текстов запрещено.</div>
@@ -448,6 +453,33 @@
 </footer>
 </div>
 <div class="panel_fixed">
+<div class="catalog_list_popup">
+<ul>
+<li><a href="">Иконы в наличии</a></li>
+<li><a href="">ПОПУЛЯРНЫЕ иконы</a></li>
+<li><a href="">Иконы Спасителя</a></li>
+<li><a href="">Иконы Богородицы</a></li>
+<li><a href="">Иконы Святых (именные)</a></li>
+<li><a href="">Иконы Ангела Хранителя</a></li>
+<li><a href="">Иконы Архангелов</a></li>
+</ul>
+<ul>
+<li><a href="">Иконы Троицы </a></li>
+<li><a href="">Венчальные пары</a></li>
+<li><a href="">Иконы Петра и Февронии</a></li>
+<li><a href="">Иконы Мерные</a></li>
+<li><a href="">Иконы Семейные</a></li>
+<li><a href="">Иконы Праздников</a></li>
+</ul>
+<ul>
+<li><a href="">Соборы Святых</a></li>
+<li><a href="">Библейские сюжеты</a></li>
+<li><a href="">Иконы Храмовые</a></li>
+<li><a href="">Иконы эксклюзивные</a></li>
+<li><a href="">Иконы миниатюрные (дорожные)</a></li>
+<li><a href="">Иконы ювелирные</a></li>
+</ul>   
+</div>
 <div class="btn_f btn_catalog">
 <i></i>
 <span>Каталог</span>
@@ -464,7 +496,7 @@
 <i></i>
 <span>Корзина</span>
 </a>
-<a href="" class="btn_f btn_call">
+<a href="#"  data-remodal-target="callback-form-main" class="btn_f btn_call">
 <i></i>
 <span>Позвонить</span>
 </a>
@@ -505,7 +537,13 @@
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js" integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="//cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js?ver=1.0.0"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.1.0/nouislider.min.js"></script>
+<script src="js/range_slider.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/inputmask.js"></script>
+<script src="js/cart-scripts.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

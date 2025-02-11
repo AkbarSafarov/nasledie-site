@@ -44,10 +44,8 @@ $(function(){
 
     $(window).on('resize', function() {
 		if ( matchMedia('(min-width: 981px)').matches ) {
-			console.log('oko1')
             $('.filter-pop-in .filter-container').prependTo('.site-container__inner__left');
 		}else {
-            console.log('oko2')
             $('.site-container__inner__left .filter-container').appendTo('.filter-pop-in');
         }
 	}).trigger('resize');

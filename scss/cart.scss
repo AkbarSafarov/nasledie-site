@@ -1670,6 +1670,10 @@ color: #410F0E;
     }
 }
 
+.content_block_wr .content_block_inner:has(.block-404-wr){
+    background: url('../img/top_bg.png') 50% 0 no-repeat #faf9c3;       
+}
+
 
 
 .popup-form-thanks {

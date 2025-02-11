@@ -235,10 +235,12 @@ $(function(){
         }
     });
 
-    lightGallery(document.querySelector('.about-us-block__history-slider'), {
-        download: false,
-        selector: 'a'
-    });
+    if(document.querySelector('.about-us-block__history-slider')){
+        lightGallery(document.querySelector('.about-us-block__history-slider'), {
+            download: false,
+            selector: 'a'
+        });
+    }
 
     const HISTORY_SLIDER22 = new Swiper('.news_gallery .swiper', {
         slidesPerView: 3,
@@ -274,10 +276,12 @@ $(function(){
         }
     });
 
-    lightGallery(document.querySelector('.news_gallery'), {
-        download: false,
-        selector: 'a'
-    });
+    if(document.querySelector('.news_gallery')){
+        lightGallery(document.querySelector('.news_gallery'), {
+            download: false,
+            selector: 'a'
+        });
+    }
 
     let inputValue;
     $('.cart-block__product-amount .product-amount-wrapper button.minus').on('click', function() {
@@ -352,17 +356,20 @@ $(function(){
             },
         });
 
-        let lightGalleryOptions = {
-            selector: 'a',
-            thumbnail: false,
-            fullScreen: false,
-            download: false,
-            autoplay: false,
-            autoplayControls: false,
-            actualSize: false
-        };
+        
 
-        lightGallery(document.querySelector('.mySwiper_main'), lightGalleryOptions);
+        if(document.querySelector('.mySwiper_main')){
+            let lightGalleryOptions = {
+                selector: 'a',
+                thumbnail: false,
+                fullScreen: false,
+                download: false,
+                autoplay: false,
+                autoplayControls: false,
+                actualSize: false
+            };
+            lightGallery(document.querySelector('.mySwiper_main'), lightGalleryOptions);
+        }
     };
     
 })
