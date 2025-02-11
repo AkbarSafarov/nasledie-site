@@ -145,7 +145,7 @@ $(function(){
         }
     });
 
-    $('input').on('blur', function(){
+    $('input,textarea').on('blur', function(){
         if ($(this).parents('.tpl-field').hasClass('error')){
             $(this).parents('.tpl-field').removeClass('error');
             $(this).parents('.tpl-field').find('.error_text').remove();
