@@ -105,6 +105,10 @@
             font-size: 30px;
             line-height: 26px;
             color: #661C19;
+
+            &.no-price {
+                font-size: 24px;
+            }
         }
         .product__btn {
             background: #781F1C;
@@ -130,6 +134,29 @@
                 line-height: 26px;
                 text-transform: uppercase;
                 color: #D7B05F;
+            }
+
+            &.buy-order {
+                background: none;
+                border: 1px solid var(--primary-1);
+                
+                span {
+                    color: #781F1C;
+                }
+
+                &:before {
+                    background: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.21484 1.28793L3.29484 1.64793L4.25784 13.1209C4.33484 14.0579 5.11784 14.7769 6.05784 14.7739H16.9668C17.8638 14.7759 18.6248 14.1159 18.7518 13.2279L19.7008 6.66993C19.8068 5.93693 19.2978 5.25693 18.5658 5.15093C18.5018 5.14193 3.62884 5.13693 3.62884 5.13693' stroke='%23781F1C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.5898 8.83282H15.3628' stroke='%23781F1C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.6192 18.2405C5.9202 18.2405 6.1632 18.4845 6.1632 18.7845C6.1632 19.0855 5.9202 19.3295 5.6192 19.3295C5.3182 19.3295 5.0752 19.0855 5.0752 18.7845C5.0752 18.4845 5.3182 18.2405 5.6192 18.2405Z' fill='%23781F1C' stroke='%23781F1C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.8995 18.2405C17.2005 18.2405 17.4445 18.4845 17.4445 18.7845C17.4445 19.0855 17.2005 19.3295 16.8995 19.3295C16.5985 19.3295 16.3555 19.0855 16.3555 18.7845C16.3555 18.4845 16.5985 18.2405 16.8995 18.2405Z' fill='%23781F1C' stroke='%23781F1C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 0 0 no-repeat;
+                }
+
+                &:hover {
+                    span {
+                        color: #D7B05F;
+                    }
+
+                    &:before {
+                        background: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.21484 1.28793L3.29484 1.64793L4.25784 13.1209C4.33484 14.0579 5.11784 14.7769 6.05784 14.7739H16.9668C17.8638 14.7759 18.6248 14.1159 18.7518 13.2279L19.7008 6.66993C19.8068 5.93693 19.2978 5.25693 18.5658 5.15093C18.5018 5.14193 3.62884 5.13693 3.62884 5.13693' stroke='%23D7B05F' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.5898 8.83282H15.3628' stroke='%23D7B05F' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.6192 18.2405C5.9202 18.2405 6.1632 18.4845 6.1632 18.7845C6.1632 19.0855 5.9202 19.3295 5.6192 19.3295C5.3182 19.3295 5.0752 19.0855 5.0752 18.7845C5.0752 18.4845 5.3182 18.2405 5.6192 18.2405Z' fill='%23D7B05F' stroke='%23D7B05F' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.8995 18.2405C17.2005 18.2405 17.4445 18.4845 17.4445 18.7845C17.4445 19.0855 17.2005 19.3295 16.8995 19.3295C16.5985 19.3295 16.3555 19.0855 16.3555 18.7845C16.3555 18.4845 16.5985 18.2405 16.8995 18.2405Z' fill='%23D7B05F' stroke='%23D7B05F' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 0 0 no-repeat;
+                    }
+                }
             }
             &:hover {
                 background: #410f0e;
@@ -165,6 +192,14 @@
                 background: #781F1C;
                 color: #fff;
             }
+        }
+
+        .text {
+            font-weight: 700;
+            font-size: 18px;
+            font-family: var(--third-family);
+            line-height: 133%;
+            color: var(--primary-1);
         }
     }
     .product_page__delivery {

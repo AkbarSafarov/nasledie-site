@@ -12,9 +12,26 @@ $(function(){
         }
     });
 
-    $('.shop2-filter__title').on('click', function(){
+    $('.shop2-filter__title').on('click', function () {
+        let $parentItem = $(this).parents('.shop2-filter__item');
+
+        $parentItem.siblings().removeClass('active').find('.shop2-filter__title').removeClass('active').next().slideUp(250);
+
+        
         $(this).toggleClass('active');
         $(this).next().slideToggle(250);
+        $parentItem.toggleClass('active');
+    });
+
+
+    $(document).on('click touchstart', function(e){
+        if( $(e.target).closest('.shop2-filter__item').length) 
+          return;
+
+        if($('.shop2-filter__title').hasClass('active')){
+            $('.active').removeClass('active');
+            $('.shop2-filter__title').next().slideUp(250);
+        }
     });
 
     $('.shop2-filter').find('.param-val').on('click', function(e) {
@@ -44,9 +61,9 @@ $(function(){
 
     $(window).on('resize', function() {
 		if ( matchMedia('(min-width: 981px)').matches ) {
-            $('.filter-pop-in .filter-container').prependTo('.site-container__inner__left');
+            $('.filter-pop-in .filter-container').prependTo('.filter-container_wrap');
 		}else {
-            $('.site-container__inner__left .filter-container').appendTo('.filter-pop-in');
+            $('.filter-container_wrap .filter-container').appendTo('.filter-pop-in');
         }
 	}).trigger('resize');
 })

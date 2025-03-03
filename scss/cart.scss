@@ -231,9 +231,9 @@
         }
     }
     &__total {
-        margin-top: 17px;
-        padding-top: 15px;
-        border-top: 1px solid #A9A08E8F;
+        // margin-top: 17px;
+        // padding-top: 15px;
+        // border-top: 1px solid #A9A08E8F;
     }
     &__total-title {
         text-transform: uppercase;
@@ -479,6 +479,11 @@
             margin-left: auto;
             position: static;
             margin-bottom: 30px;
+        }
+
+        @media all and (max-width: 767px) {
+            margin-left: 0;
+            width: 100%;
         }
     }
     &__delivery {
@@ -1718,6 +1723,74 @@ color: #410F0E;
             &:hover {
                 background: #781F1C;
                 color: #D7B05F;
+            }
+        }
+    }
+}
+
+.order-form__list {
+    display: block;
+    width: calc(100% - 330px);
+
+    .top_fields {
+        display: flex;
+        gap: 10px;
+        padding-bottom: 13px;
+
+        &_left {
+            flex: 0 0 calc(50% - 5px);
+
+            .order-form__field-item {
+                margin-bottom: 14px;
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .tpl-field.type-textarea {
+            flex: 0 0 calc(50% - 5px);
+            width: auto;
+
+            textarea {
+                height: 178px;
+            }
+        }
+    }
+
+    @media all and (max-width: 1024px) {
+        width: 100%;
+
+        .order-form__field-item.policity-item {
+            margin-bottom: 16px;
+        }
+
+        .top_fields .tpl-field.type-textarea {
+            
+            textarea {
+                height: 144px;
+            }
+        }
+    }
+
+    @media all and (max-width: 767px) {
+        width: 100%;
+
+        .order-form__field-item.policity-item {
+            margin-bottom: 16px;
+        }
+
+        .top_fields {
+            display: block;
+
+            &_left {
+                padding-bottom: 14px;
             }
         }
     }

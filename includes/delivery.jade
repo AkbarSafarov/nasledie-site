@@ -84,19 +84,19 @@ include _header.jade
                     </div>
                     <div class="delivery-block__right">
                         <div class="cart-block__cart-total">
-                            <div class="cart-block__total-item">
+                            <!-- <div class="cart-block__total-item">
                                 <div class="title">Товары (2)</div>
                                 <div class="value">71 000 руб</div>
                             </div>
                             <div class="cart-block__total-item">
                                 <div class="title">Доставка</div>
                                 <div class="value">0 руб</div>
-                            </div>
+                            </div> -->
                             <div class="cart-block__total">
                                 <div class="cart-block__total-title">Итого</div>
                                 <div class="cart-block__total-summ">71 000 руб</div>
                                 <div class="cart-block__checkout-btn">
-                                    <button class="tpl-form-button">Оформить заказ</button>
+                                    <button class="tpl-form-button">Подтвердить заказ</button>
                                 </div>
                                 <div class="cart-block__buy-oneclick">
                                     <a href="javascript:void(0);" data-remodal-target="buy-one-click">Купить в один клик</a>
@@ -114,14 +114,21 @@ include _header.jade
                 <div class="order-form__inner block-width">
                     <div class="order-form__title">Данные покупателя</div>
                     <div class="order-form__list">
-                        <div class="order-form__field-item">
-                            <input type="text" placeholder="Введите имя">
-                        </div>
-                        <div class="order-form__field-item tpl-field type-email required">
-                            <input type="text" placeholder="Введите email">
-                        </div>
-                        <div class="order-form__field-item tpl-field type-phone required">
-                            <input type="text" placeholder="Введите телефон">
+                        <div class="top_fields">
+                            <div class="top_fields_left">
+                                <div class="order-form__field-item">
+                                    <input type="text" placeholder="Ваше имя">
+                                </div>
+                                <div class="order-form__field-item tpl-field type-email required">
+                                    <input type="text" placeholder="E-mail">
+                                </div>
+                                <div class="order-form__field-item tpl-field type-phone required">
+                                    <input type="text" placeholder="Телефон">
+                                </div>
+                            </div>
+                            <div class="order-form__field-item tpl-field type-textarea">
+                                <textarea name="" placeholder="Комментарий" id=""></textarea>
+                            </div>
                         </div>
                         <div class="order-form__field-item policity-item">
                             <label>
