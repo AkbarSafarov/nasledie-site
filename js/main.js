@@ -4,8 +4,9 @@ $(function(){
         $(this).parents('.catalog_block_header').toggleClass('opened');
     })
 
-    $('.btn_catalog').on('click', function(){
-        $(this).parents('.panel_fixed').toggleClass('opened');
+    $('.btn_call').on('click', function(e){
+        e.preventDefault();
+        $('.select_btns').toggleClass('opened');
     })
 
     
@@ -96,7 +97,7 @@ $(function(){
         });
     }
 
-    var menuBtn = $('.burger'),
+    var menuBtn = $('.burger_btn'),
         menuWrapper = $('.menu_burger'),
         menuClose = $('.menuClose'),        
         openedMenu = 'opened',

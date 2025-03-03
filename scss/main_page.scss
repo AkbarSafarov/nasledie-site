@@ -514,4 +514,27 @@
             position: static;
         }
     }
+
+    .product-list {
+        margin: 0;
+        gap: 12px 10px;
+
+        .product-item {
+            margin: 0;
+            flex: 0 0 calc(25% - 8px);
+
+            @media all and (max-width: 1024px){
+                flex: 0 0 calc(33.33% - 7px);
+            }
+
+            @media all and (max-width: 767px){
+                flex: 0 0 calc(50% - 5px);
+            }
+
+            @media all and (max-width: 530px){
+                flex: none;
+                width: 100%;
+            }
+        }
+    }
 }
