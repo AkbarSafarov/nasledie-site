@@ -260,11 +260,24 @@ $(function(){
     $('.menu_burger li a').each(function(){
         if ($(this).parent().find('ul').length) {
             $(this).parent().addClass('submenu-parent')
-            $(this).append('<i"></i>');
+            $(this).append('<i></i>');
         }
     });
 
     $('.menu_burger li').find('a i').on('click', function(event){
+        $(this).parents('li:first').siblings().removeClass('hasSubmenu');
+        $(this).parents('li:first').toggleClass('hasSubmenu');
+        return false;
+    });
+
+    $('.menu_left_wrap li a').each(function(){
+        if ($(this).parent().find('ul').length) {
+            $(this).parent().addClass('submenu-parent');
+            $(this).append('<i></i>');
+        }
+    });
+
+    $('.menu_left_wrap li').find('a i').on('click', function(event){
         $(this).parents('li:first').siblings().removeClass('hasSubmenu');
         $(this).parents('li:first').toggleClass('hasSubmenu');
         return false;
@@ -281,6 +294,10 @@ $(function(){
 
     $('.btn_list_menu').on('click', function(){
         $('.main_list_menu').toggleClass('active');
+    });
+
+    $('.favorite_btn').on('click', function(){
+        $(this).toggleClass('active');
     });
 
     $('.main_list_menu li a').on('click', function(){

@@ -483,20 +483,24 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 19px;
-            color: #781F1C;
+            color: var(--primary-1);
             padding: 10px 40px 11px;
             border-radius: 5px;
             text-decoration: none;
             white-space: nowrap;
+            opacity: .5;
+
             &:hover {
                 background: #781F1C;
                 color: #E5CF49;
+                opacity: 1;
             }
         }
         &.r-tabs-state-active {
             > a {
                 background: #781F1C;
                 color: #E5CF49;
+                opacity: 1;
             }
         }
     }
@@ -534,6 +538,29 @@
             @media all and (max-width: 530px){
                 flex: none;
                 width: 100%;
+            }
+        }
+    }
+}
+
+.main_tabs__bot {
+
+    .more_link {
+        text-align: center;
+        padding-top: 23px;
+
+        @media all and (max-width: 640px) {
+            display: none;
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: underline;
+            color: var(--primary-braun);
+
+            &:hover {
+                text-decoration: none;
             }
         }
     }

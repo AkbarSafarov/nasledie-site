@@ -375,6 +375,10 @@
   &:hover {
     background: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.75014 11.863C2.6705 8.51297 3.93227 4.68397 7.47104 3.55097C9.3325 2.95397 11.3871 3.30597 12.9347 4.46297C14.3987 3.33797 16.5288 2.95797 18.3882 3.55097C21.927 4.68397 23.1968 8.51297 22.1182 11.863C20.4378 17.173 12.9347 21.263 12.9347 21.263C12.9347 21.263 5.48683 17.235 3.75014 11.863Z' stroke='%23781f1b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.9595 6.96466C18.0361 7.31066 18.7968 8.26566 18.8883 9.38666' stroke='%23781f1b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 0 0 no-repeat;
   }
+
+  &.active {
+    background: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='%23781f1b' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.75014 11.863C2.6705 8.51297 3.93227 4.68397 7.47104 3.55097C9.3325 2.95397 11.3871 3.30597 12.9347 4.46297C14.3987 3.33797 16.5288 2.95797 18.3882 3.55097C21.927 4.68397 23.1968 8.51297 22.1182 11.863C20.4378 17.173 12.9347 21.263 12.9347 21.263C12.9347 21.263 5.48683 17.235 3.75014 11.863Z' stroke='%23781f1b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.9595 6.96466C18.0361 7.31066 18.7968 8.26566 18.8883 9.38666' stroke='%23781f1b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 0 0 no-repeat;
+  }
 }
 
 .filter-container .shop2-filter__items {
