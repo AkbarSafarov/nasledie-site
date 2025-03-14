@@ -7,17 +7,31 @@ $(function(){
     $('.btn_call').on('click', function(e){
         e.preventDefault();
         $('.select_btns').toggleClass('opened');
+        $('.panel_fixed').removeClass('opened');
     })
 
-    
+    $('.btn_more_tag').on('click', function(e){
+        
+        if($('.tags_block').hasClass('opened')) {
+            $(this).text('Показать все');
+            $('.tags_block').removeClass('opened');
+        } else {
+            $(this).text('Свернуть');
+            $('.tags_block').addClass('opened');
+        }
+    })
 
     $('.btn_search').on('click', function(){
         $('html, body').animate({
             scrollTop: 0
         },500);
         $('.search_block form input').focus();
+        $('.panel_fixed').removeClass('opened');
     })
     
+    $('.btn_catalog').on('click', function(){
+        $('.panel_fixed').toggleClass('opened');
+    })
 
     $('.slider_block_wr').each(function(){
         const slider = $(this).find('.swiper');
@@ -108,6 +122,7 @@ $(function(){
         menuBtn.toggleClass(openedMenu);
         $html.toggleClass(overflowHidden);
         $html.toggleClass('open_menu');
+        $('.panel_fixed').removeClass('opened');
     });
     menuClose.on("click", function(event) {
         menuWrapper.removeClass(openedMenu);

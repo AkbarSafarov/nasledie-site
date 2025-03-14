@@ -396,12 +396,13 @@
 
         .shop2-filter__title{
             padding: 3px 32px 3px 16px;
+            border: 1px solid #C6AB86;
             cursor: pointer;
             font-weight: 400;
             font-size: 14px;
             line-height: 171%;
             color: #831914;
-            background: rgba(255, 255, 238, 0.7);
+            background: rgba(255, 255, 238, 0);
             border-radius: 4px;
 
             &:before {
@@ -598,9 +599,16 @@
                             font-size: 16px;
                             line-height: 187%;
                             color: var(--primary-braun);
+                            display: flex;
+                            gap: 5px;
 
                             span {
                                 color: var(--gold-dark);
+                                flex: 0 0 160px;
+                            }
+
+                            @media all and (max-width: 730px) {
+                                display: block;
                             }
                         }
                     }
