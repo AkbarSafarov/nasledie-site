@@ -437,6 +437,11 @@ button {
                 }
             }
 
+            &.opened > a {
+                font-weight: 700;
+                color: var(--primary-braun);    
+            }
+
             > ul {
                 padding: 0 0 0 33px;
                 margin: 0;
@@ -461,6 +466,11 @@ button {
                         }
                     }
 
+                    &.opened > a {
+                        font-weight: 700;
+                        color: var(--primary-braun);    
+                    }
+
                     ul {
                         padding: 0 0 0 5px;
                         margin: 0;
@@ -479,6 +489,11 @@ button {
                             &:hover {
                                 color: var(--primary-braun);
                             }
+                        }
+
+                        &.opened > a {
+                            font-weight: 700;
+                            color: var(--primary-braun);    
                         }
                     }
 

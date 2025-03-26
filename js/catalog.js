@@ -59,11 +59,11 @@ $(function(){
         };
     });
 
-    $(window).on('resize', function() {
-		if ( matchMedia('(min-width: 981px)').matches ) {
-            $('.filter-pop-in .filter-container').prependTo('.filter-container_wrap');
-		}else {
-            $('.filter-container_wrap .filter-container').appendTo('.filter-pop-in');
-        }
-	}).trigger('resize');
+    // $(window).on('resize', function() {
+	// 	if ( matchMedia('(min-width: 981px)').matches ) {
+    //         $('.filter-pop-in .filter-container').prependTo('.filter-container_wrap');
+	// 	}else {
+    //         $('.filter-container_wrap .filter-container').appendTo('.filter-pop-in');
+    //     }
+	// }).trigger('resize');
 })

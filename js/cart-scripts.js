@@ -1,9 +1,34 @@
 $(function(){
 
+    $(document).on('click', '.cart-block__checkout-btn .tpl-form-button', function(e){
+        if($('.order-form__field-item input').val() == '' || $('.order-form__field-item textarea').val() == '') {
+            e.preventDefault();
+            var blockPos = $(".order-form").offset().top;
+	        $('html, body').delay(300).animate({scrollTop:blockPos}, 1000);
+        } else if (!$('.delivery-block__payments .delivery-block__option-item input:checked').length) {
+            e.preventDefault();
+            var blockPos = $(".delivery-block__payments").offset().top;
+	        $('html, body').delay(300).animate({scrollTop:blockPos}, 1000);
+        } else if (!$('.delivery-block__delivery .delivery-block__option-item input:checked').length) {
+            e.preventDefault();
+            var blockPos = $(".delivery-block__delivery").offset().top;
+	        $('html, body').delay(300).animate({scrollTop:blockPos}, 1000);
+        }
+    })
+
     $(".file-upload input[type=file]").change(function(){
             var filename = $(this).val().replace(/.*\\/, "");
             $("#filename").val(filename);
     });
+
+    const fileInput = document.getElementById("file_field");
+    const fileLabel = document.querySelector('label[for="file_field"]');
+
+    if (fileInput && fileLabel) {
+        fileInput.addEventListener("change", function () {
+            fileLabel.textContent = this.files.length ? this.files[0].name : "Прикрепить файл";
+        });
+    }
 
     const SWIPER = new Swiper('.swiper.slider-wrap', {
         slidesPerView: 4,
