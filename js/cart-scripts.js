@@ -365,6 +365,7 @@ $(function(){
             breakpoints: {
                 0: {
                     spaceBetween: 10,
+                    direction: "horizontal",
                 },
                 768: {
                     spaceBetween: 12,

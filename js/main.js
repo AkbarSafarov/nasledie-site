@@ -188,6 +188,7 @@ $(function(){
 
     $('.type-phone input').inputmask("+7 (999) 999-99-99");
 
+
     $('input[type="checkbox"]').on('change', function (event) {
 
         if (!$(this).closest('.tpl-field.required').hasClass('no_checked') && !$(this).is(":checked")) {
@@ -197,22 +198,30 @@ $(function(){
         }
     })
 
+    $('.type-email input').inputmask({
+        alias: "email",
+        clearIncomplete: true
+    });
+
     $('.type-email input').on('blur', function () {
-        let phoneWrapper = $(this).parents('.tpl-field');
+        let emailWrapper = $(this).parents('.tpl-field');
         let email = $(this).val();
 
-        if (email.length > 0
-            && (email.match(/.+?\@.+/g) || []).length !== 1) {
-            phoneWrapper.addClass('incorrect-phone');
-            if (!phoneWrapper.find('.empty_number').length) {
-                phoneWrapper.append('<div class="error_text empty_number">Вы ввели некорректный e-mail</div>');
+        // Строгая проверка e-mail
+        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        if (email.length > 0 && !emailRegex.test(email)) {
+            emailWrapper.addClass('incorrect-phone');
+
+            if (!emailWrapper.find('.empty_number').length) {
+                emailWrapper.append('<div class="error_text empty_number">Вы ввели некорректный e-mail</div>');
             }
         } else {
-            phoneWrapper.removeClass('incorrect-phone');
-            phoneWrapper.removeClass('error');
-            phoneWrapper.find('.empty_number').remove();
+            emailWrapper.removeClass('incorrect-phone error');
+            emailWrapper.find('.empty_number').remove();
         }
     });
+
 
     $('.tpl-form-button').on('click', function(e){
         $(this).parents('form').find('.tpl-field').each(function(){
@@ -267,7 +276,13 @@ $(function(){
             //thpopup();
             $(this).closest('.remodal.remodal-reviews').addClass('remodal-send');
             $(this).closest('.popup-form').hide();
-            $('.popup-form-thanks').show();
+            if($(this).closest('.remodal')) {
+                $(this).closest('.remodal').find('.popup-form-thanks').show();
+            }
+
+            if($(this).closest('.contacts-block__form')) {
+                $(this).closest('.contacts-block__form').find('.popup-form-thanks').show();
+            }
         }
     });
 
