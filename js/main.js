@@ -214,11 +214,11 @@ $(function(){
 
             if (!emailWrapper.find('.empty_number').length) {
                 emailWrapper.append('<div class="error_text empty_number">Вы ввели некорректный e-mail</div>');
-            } else {
-                emailWrapper.removeClass('incorrect-phone error');
-                emailWrapper.find('.empty_number').remove();
-            }
-        } 
+            } 
+        } else {
+            emailWrapper.removeClass('incorrect-phone error');
+            emailWrapper.find('.empty_number').remove();
+        }
     });
 
 
@@ -399,5 +399,6 @@ function expandTags() {
     }
     
 }
+
 
 

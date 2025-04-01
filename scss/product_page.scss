@@ -285,9 +285,20 @@
                     order: 1;
                     width: 100%;
                     flex: none;
-                    display: none;
+                    //display: none;
                     .mySwiper_thumb {
                         height: auto;
+
+                        .swiper-slide {
+                            height: auto !important;
+                            // max-width: 100px;
+
+                            img {
+                                // width: 100%;
+                                // height: 100%;
+                                // object-fit: cover;
+                            }
+                        }
                     }
                 }
                 .main_image {
@@ -367,9 +378,11 @@
             color: #66130F;
             padding: 10px 34px 12px 33px;
             text-decoration: none;
-            &:hover {
-                background: #831914;
-                color: #E5CF49;
+            @media all and (min-width: 1025) {
+                &:hover {
+                    background: #831914;
+                    color: #E5CF49;
+                }
             }
         }
         &.r-tabs-state-active {
@@ -480,5 +493,20 @@
         &__items {
             width: calc(100% - 16px);
         }
+    }
+}
+
+.lg-outer *{
+    pointer-events: none;
+}
+
+.lg-outer {
+    .lg-toolbar .lg-icon,
+    .lg-next, 
+    .lg-pager-outer, 
+    .lg-prev, 
+    .lg-toolbar,
+    .lg-current img.lg-object {
+        pointer-events: all;
     }
 }

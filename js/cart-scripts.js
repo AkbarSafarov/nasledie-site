@@ -97,9 +97,6 @@ $(function(){
             1100: {
                 slidesPerView: 3
             }
-        },
-        autoplay: {
-            delay: 3000,
         }
     });
 
@@ -364,10 +361,11 @@ $(function(){
             watchSlidesProgress: true,
             breakpoints: {
                 0: {
+                    slidesPerView: 3,
                     spaceBetween: 10,
                     direction: "horizontal",
                 },
-                768: {
+                1025: {
                     spaceBetween: 12,
                     direction: "vertical",
                 }
@@ -384,7 +382,7 @@ $(function(){
 
         
 
-        if(document.querySelector('.mySwiper_main')){
+        if (document.querySelector('.mySwiper_main')) {
             let lightGalleryOptions = {
                 selector: 'a',
                 thumbnail: false,
@@ -392,10 +390,14 @@ $(function(){
                 download: false,
                 autoplay: false,
                 autoplayControls: false,
-                actualSize: false
+                actualSize: false,
+                mode: 'lg-fade'
             };
-            lightGallery(document.querySelector('.mySwiper_main'), lightGalleryOptions);
+
+            let gallery = lightGallery(document.querySelector('.mySwiper_main'), lightGalleryOptions);
+            let galleryThumb = lightGallery(document.querySelector('.mySwiper_thumb'), lightGalleryOptions);
         }
+
     };
     
 })
