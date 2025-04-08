@@ -583,10 +583,6 @@ img, textarea, input, table {
                     padding: 8px 16px;
                     text-decoration: none;
                     position: relative;
-                
-                    &:hover {
-                        text-decoration: underline;
-                    }
 
                     i {
                         position: absolute;
@@ -636,6 +632,11 @@ img, textarea, input, table {
                 }
 
                 &.hasSubmenu {
+                    > a {
+                        i:before {
+                            transform: rotate(-135deg);
+                        }
+                    }
                     ul {
                         display: block;
                     }
@@ -2537,6 +2538,10 @@ img, textarea, input, table {
     flex-wrap:wrap;
     gap: 12px;
     padding-bottom: 27px;
+
+    &.main_page_block {
+        padding: 27px 0 0;
+    }
 
     .tag_btn {
         text-decoration: none;

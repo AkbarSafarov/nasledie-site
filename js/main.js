@@ -294,7 +294,7 @@ $(function(){
     });
 
     $('.menu_burger li').find('a i').on('click', function(event){
-        $(this).parents('li:first').siblings().removeClass('hasSubmenu');
+        //$(this).parents('li:first').siblings().removeClass('hasSubmenu');
         $(this).parents('li:first').toggleClass('hasSubmenu');
         return false;
     });
