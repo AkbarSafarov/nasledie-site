@@ -1,0 +1,192 @@
+.text-module-wrapper .text-pagination-wrap {
+  position: relative;
+  margin-bottom: 16px;
+}
+.text-module-wrapper .text-pagination-wrap:after {
+  display: block;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  line-height: 0;
+}
+.text-module-wrapper .s3-module-list {
+  width: 100%;
+  padding: 22px 16px 24px 16px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: none;
+}
+.text-module-wrapper .s3-module-list .boxes {
+  margin: 0;
+  border: none;
+  position: relative;
+}
+.text-module-wrapper .s3-module-list .boxes thead tr th {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.4px;
+  color: #838383;
+}
+.text-module-wrapper .s3-module-list .boxes thead tr th.module-element-controls {
+  padding-right: 0;
+}
+.text-module-wrapper .s3-module-list .boxes thead tr th.module-element-name {
+  padding-left: 15px;
+}
+.text-module-wrapper .s3-module-list .boxes tbody tr {
+  border-bottom: 1px solid #E9E9E9;
+}
+.text-module-wrapper .s3-module-list .boxes tbody tr td {
+  padding: 7px 30px 7px 0;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.4px;
+  color: #838383;
+}
+.text-module-wrapper .s3-module-list .boxes tbody tr td span.objectName {
+  color: #15c;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-block;
+  max-width: 425px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-module-wrapper .s3-module-list .boxes tbody tr td.module-element-name {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  color: #1155CC;
+}
+.text-module-wrapper .s3-module-list .boxes tbody tr td.module-element-controls .s3-ico {
+  width: 24px;
+  height: 24px;
+  background-size: auto;
+}
+.text-module-wrapper .s3-module-list .boxes tbody tr td.module-element-controls .s3-ico.i-edit-svg {
+  background-image: url("/my/s3/images/svg_icons/oah_icons/oah-edit5.svg");
+  margin-right: 0;
+}
+.text-module-wrapper .s3-module-list .boxes tbody tr td.module-element-controls .s3-ico.i-delete-svg {
+  background-image: url(/my/s3/images/svg_icons/oah-trash-new.svg) !important;
+  margin-right: 0;
+}
+.text-module-wrapper .s3-module-list .boxes tbody tr td span:hover {
+  text-decoration: none !important;
+}
+.text-module-wrapper .s3-module-list .boxes tbody tr:first-child {
+  border-top: 1px solid #E9E9E9;
+}
+.text-module-wrapper .s3-module-list .boxes tbody tr:nth-child(2n-1) {
+  background: #FCFCFC;
+}
+.text-module-wrapper .s3-module-list .boxes tbody tr.selected {
+  background: #C4FBC7;
+}
+.bluepopup-wrapper #selected_container_tr tr.box_tr .module-element-name {
+  padding-left: 40px !important;
+}
+.bluepopup-wrapper #selected_container_tr tr.box_tr:after {
+  position: absolute;
+  content: '';
+  width: 26px;
+  height: 39px;
+  background: #F3F3F3 url(/my/s3/images/svg_icons/oah_icons/oah-dragable2.svg) 50% 50% no-repeat;
+  left: 0;
+  opacity: 0.6;
+  cursor: move;
+  margin-top: 0px;
+}
+body > tr.box {
+  background-color: #ececec;
+  display: flex;
+  max-width: 868px;
+  width: 100%;
+  align-items: center;
+}
+body > tr.box td {
+  padding: 7px 30px 7px 15px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.4px;
+  color: #838383;
+  max-width: 90px;
+  width: 100%;
+  padding-left: 0;
+}
+body > tr.box td span.objectName {
+  color: #15c;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-block;
+  max-width: 425px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body > tr.box td.module-element-name {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  color: #1155CC;
+  width: 100%;
+  max-width: 637px;
+  padding-left: 40px;
+}
+body > tr.box td.module-element-controls {
+  width: 66px;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+body > tr.box td.module-element-controls .s3-ico {
+  width: 24px;
+  height: 24px;
+  background-size: auto;
+}
+body > tr.box td.module-element-controls .s3-ico.i-edit-svg {
+  background-image: url("/my/s3/images/svg_icons/oah_icons/oah-edit5.svg");
+  margin-right: 0;
+}
+body > tr.box td.module-element-controls .s3-ico.i-delete-svg {
+  background-image: url(/my/s3/images/svg_icons/oah-trash-new.svg) !important;
+  margin-right: 0;
+}
+body > tr.box td span:hover {
+  text-decoration: none !important;
+}
+body > tr.box:first-child {
+  border-top: 1px solid #E9E9E9;
+}
+body > tr.box:nth-child(2n-1) {
+  background: #FCFCFC;
+}
+body > tr.box.selected {
+  background: #C4FBC7;
+}
+body > tr.box:after {
+  position: absolute;
+  content: '';
+  width: 26px;
+  height: 39px;
+  background: #F3F3F3 url(/my/s3/images/svg_icons/oah_icons/oah-dragable2.svg) 50% 50% no-repeat;
+  left: 0;
+  opacity: 0.6;
+  cursor: move;
+  margin-top: 0px;
+}

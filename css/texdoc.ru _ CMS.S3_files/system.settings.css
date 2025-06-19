@@ -1,0 +1,127 @@
+.s3-main-settings .cookie_message {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(43, 43, 43, 0.2);
+  border-radius: 8px;
+  max-width: 900px;
+  padding: 32px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.s3-main-settings .cookie_message h4 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  margin: 0 0 26px 0;
+}
+.s3-main-settings .cookie_message .row_field {
+  margin-bottom: 16px;
+}
+.s3-main-settings .cookie_message .row_field .ico {
+  margin: 0 10px 0 0;
+}
+.s3-main-settings .cookie_message .row_field label {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.s3-main-settings .cookie_message .row_field .switcher {
+  display: inline-flex;
+  align-items: center;
+}
+.s3-main-settings .cookie_message .row_field .label {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+  color: #212121;
+  letter-spacing: -0.1px;
+}
+.s3-main-settings .cookie_message .row_field button.s3-btn-submit {
+  background: #ECECEC;
+  box-shadow: 0 1px 1px #DFDFDF;
+  border-radius: 4px;
+  outline: none;
+  padding: 11px 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.2px;
+  color: #212121;
+  border: none;
+  cursor: pointer;
+}
+.s3-main-settings .cookie_message .row_field button.s3-btn-submit:hover {
+  background: #F9F9F9;
+  box-shadow: 0 2px 4px #DFDFDF;
+}
+.s3-main-settings .cookie_message .row_field button.s3-btn-submit:active {
+  background: #DFDFDF;
+  box-shadow: none;
+}
+.s3-main-settings .cookie_message .row_field input {
+  min-width: 356px;
+}
+.s3-main-settings .cookie_message .row_field textarea {
+  max-width: 835px;
+  min-width: 356px;
+  min-height: 80px;
+}
+.s3-main-settings .cookie_message .row_field input,
+.s3-main-settings .cookie_message .row_field textarea {
+  font-family: "Open Sans", sans-serif;
+  background: #FFFFFF;
+  border: 1px solid #A0A0A0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #212121;
+}
+.s3-main-settings .cookie_message .row_field input:focus,
+.s3-main-settings .cookie_message .row_field textarea:focus {
+  background-color: #fffaf1;
+  border-color: #fbb017;
+  box-shadow: 0 1px 2px #fadca0;
+  outline-style: none;
+}
+.s3-main-settings .cookie_message .row_field--note {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: #6D6D6D;
+  margin-top: 4px;
+}
+.s3-main-settings .cookie_message .row_field--note .s3-oah-ico {
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: 22px 22px;
+  margin-right: 8px;
+}
+.s3-main-settings .cookie_message .section_fields {
+  margin: 24px 0 32px 0;
+}
+.s3-main-settings .cookie_message .section_fields .row_field {
+  margin-bottom: 24px;
+}
+.s3-main-settings .cookie_message .section_fields .row_field .label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.s3-main-settings .cookie_message .section_fields .row_field:last-child {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=system.settings.css.map */

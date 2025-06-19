@@ -1,0 +1,212 @@
+.media-module-wrapper .media-pagination-wrap {
+  text-align: center;
+  clear: both;
+  float: none;
+  margin: 0 0 25px 0;
+}
+.media-module-wrapper .media-pagination-wrap:after {
+  display: block;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  line-height: 0;
+}
+.media-module-wrapper .media-pagination-wrap .s3-pagelist-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+.media-module-wrapper .image-drag-and-drop-message {
+  border: 1px dashed #80c173;
+}
+.media-list-wrapper {
+  position: relative;
+}
+.media-list-wrapper .image-drag-and-drop-icon {
+  background: url(/my/s3/images/svg_icons/drop-media.svg) 50% no-repeat;
+}
+.media-list-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  text-align: left;
+}
+.media-list-wrapper ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 168px;
+  height: 174px;
+  margin: 0 30px 30px 0;
+  position: relative;
+  float: none;
+}
+.media-list-wrapper ul li td.draggable {
+  padding: 15px 0 0 0;
+  background: url('/my/s3/images/redesign/s3-cm-grid.png') left top repeat;
+}
+.media-list-wrapper ul li span.media-element {
+  display: inline-block;
+  cursor: auto;
+  position: relative;
+}
+.media-list-wrapper ul li span.media-element span.media-wrapper {
+  width: 170px;
+  height: 174px;
+  border: 1px solid #e8e8e8;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 1px;
+  background: #ffffff;
+}
+.media-list-wrapper ul li span.media-element span.media-info {
+  display: block;
+  background: #ffffff;
+  padding: 12px 8px 0;
+  height: 62px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+}
+.media-list-wrapper ul li span.media-element span.media-info span.name {
+  color: #333333;
+  font-size: 13px;
+  line-height: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 130px;
+  display: block;
+}
+.media-list-wrapper ul li span.media-element span.media-info span.size {
+  font-size: 10px;
+  line-height: normal;
+  color: #929292;
+  padding: 5px 0 0;
+  display: block;
+}
+.media-list-wrapper ul li span.media-element span.controls {
+  overflow: hidden;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  bottom: 1px;
+  right: -1px;
+  width: 33px;
+}
+.media-list-wrapper ul li span.media-element span.controls > span {
+  display: block;
+  width: 33px;
+  height: 31px;
+  line-height: 31px;
+  cursor: pointer;
+  background: rgba(246, 246, 246, 0.9);
+}
+.media-list-wrapper ul li span.media-element span.controls > span:hover {
+  background-color: #DAE7FC;
+}
+.media-list-wrapper ul li span.media-element span.controls > span.delete:hover {
+  background-color: #ffe2dd;
+}
+.media-list-wrapper ul li span.media-element span.media-thumb {
+  background-position: center -55px;
+  background-repeat: no-repeat;
+  background-size: 220px;
+  height: 112px;
+  line-height: 112px;
+  width: 100%;
+  display: block;
+  cursor: auto;
+  background-color: #fff;
+  font-size: 0;
+  cursor: pointer;
+}
+.media-upload-form {
+  padding: 0;
+  margin: 0;
+}
+.media-upload-form .s3-note {
+  margin-bottom: 20px;
+}
+.media-upload-form button.w-ico-first span.s3-ico {
+  margin-right: 5px !important;
+}
+.media-upload-form #uploadContainer {
+  padding-bottom: 5px;
+}
+.media-upload-form #uploadContainer .uploadItem {
+  background: #fafafa;
+  margin: 3px 0;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 0;
+  line-height: 0;
+}
+.media-upload-form #uploadContainer .uploadItem span.objectEdit {
+  text-decoration: none !important;
+}
+.media-upload-form #uploadContainer .uploadItem label.s3-file {
+  width: 300px;
+}
+.media-upload-form #uploadContainer .uploadItem label.s3-file span.file-text {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 140px;
+  vertical-align: middle;
+}
+.media-upload-form #uploadContainer .uploadItem span.objectEdit {
+  margin-left: 10px;
+}
+.media-upload-form .folderContentControl {
+  max-width: 100%;
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+.file-upload-inner.media-upload {
+  padding: 0;
+}
+.file-upload-inner.media-upload .file-upload-note {
+  padding: 0 0 20px;
+}
+.file-upload-inner.media-upload span.i-info-solid {
+  float: none;
+  margin: 0 5px 0 0;
+}
+.file-upload-inner.media-upload #fileTypeError {
+  text-align: center;
+  padding: 0 0 20px;
+  margin: 0;
+  display: none;
+}
+.file-upload-inner.media-upload #fileTypeError > div {
+  border: 2px solid #e7433a;
+  border-radius: 6px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 11px 20px 11px 40px;
+  font: normal 12px Arial;
+  color: #212121;
+  vertical-align: middle;
+  background: url("/my/s3/images/svg_icons/oah-attention-red.svg") 10px 50% no-repeat;
+  min-height: 30px;
+  display: inline-block;
+}
+.file-upload-inner.media-upload #uploaderStatusBar {
+  display: none;
+  margin-bottom: 20px;
+}
+.file-upload-inner.media-upload .upload-buttons {
+  padding: 0;
+  margin: 0;
+}
+.file-upload-inner.media-upload .upload-buttons .upload-btn {
+  display: none;
+}

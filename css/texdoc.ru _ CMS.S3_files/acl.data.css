@@ -1,0 +1,543 @@
+._acl-container {
+  width: auto;
+  display: inline-block;
+}
+._acl-container .s3-data-list {
+  margin-bottom: 10px;
+}
+._acl-enable-note {
+  padding: 25px 30px 12px 0;
+  color: #212121;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+._acl-idea {
+  color: #333;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  background: url('/my/s3/images/svg_icons/ic_ol_attention-red.svg') 0 0 no-repeat;
+  padding: 0 20px 5px 28px;
+}
+._acl-reference {
+  padding: 50px 0 0 25px;
+}
+._acl-reference ._acl-reference__title {
+  color: #333;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 0 20px;
+}
+._acl-reference ._acl-reference__links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+._acl-reference ._acl-reference__links ._link-item {
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+._acl-reference ._acl-reference__links ._link-item a {
+  text-decoration: underline;
+  color: #15c;
+}
+._acl-reference ._acl-reference__links ._link-item a:hover {
+  text-decoration: none;
+}
+.s3-acl {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  min-width: 1280px;
+}
+.s3-acl div.s3-actions-panel form.search-form input.search-text {
+  width: 283px;
+}
+.s3-acl-users,
+.s3-acl-roles {
+  padding: 0;
+  min-height: 100px;
+  background: #FFF;
+  border-radius: 4px 4px 0 0;
+}
+.s3-acl-users table,
+.s3-acl-roles table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+.s3-acl-users table th,
+.s3-acl-roles table th {
+  text-align: left;
+  color: #777;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 25px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.s3-acl-users table th.user-name,
+.s3-acl-roles table th.user-name,
+.s3-acl-users table th.role-name,
+.s3-acl-roles table th.role-name {
+  padding-left: 32px;
+}
+.s3-acl-users table tbody > tr,
+.s3-acl-roles table tbody > tr {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #e6e6e6;
+}
+.s3-acl-users table tbody > tr:nth-child(2n-1),
+.s3-acl-roles table tbody > tr:nth-child(2n-1) {
+  background-color: #FAFAFA;
+}
+.s3-acl-users table td,
+.s3-acl-roles table td {
+  padding: 8px 25px;
+  color: #666;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+}
+.s3-acl-users table td.user-name,
+.s3-acl-roles table td.user-name,
+.s3-acl-users table td.role-name,
+.s3-acl-roles table td.role-name {
+  color: #212121;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 700;
+  padding-left: 32px;
+}
+.s3-acl-users table td.user-name span.s3-ico.user-ico,
+.s3-acl-roles table td.user-name span.s3-ico.user-ico,
+.s3-acl-users table td.role-name span.s3-ico.user-ico,
+.s3-acl-roles table td.role-name span.s3-ico.user-ico {
+  margin: 0 6px 0 -22px;
+}
+.s3-acl-users table td.user-name .s3-badge,
+.s3-acl-roles table td.user-name .s3-badge,
+.s3-acl-users table td.role-name .s3-badge,
+.s3-acl-roles table td.role-name .s3-badge {
+  line-height: 15px;
+  margin: -1px 0 0 4px;
+  font-weight: 700;
+}
+.s3-acl-users table td.user-name span.i-info-details-svg,
+.s3-acl-roles table td.user-name span.i-info-details-svg,
+.s3-acl-users table td.role-name span.i-info-details-svg,
+.s3-acl-roles table td.role-name span.i-info-details-svg {
+  margin-left: 4px;
+}
+.s3-acl-users table td.user-name .objectName.edit,
+.s3-acl-roles table td.user-name .objectName.edit,
+.s3-acl-users table td.role-name .objectName.edit,
+.s3-acl-roles table td.role-name .objectName.edit {
+  color: #15c;
+}
+.s3-acl-users table td.user-name .objectName.edit span.i-pencil-svg,
+.s3-acl-roles table td.user-name .objectName.edit span.i-pencil-svg,
+.s3-acl-users table td.role-name .objectName.edit span.i-pencil-svg,
+.s3-acl-roles table td.role-name .objectName.edit span.i-pencil-svg {
+  margin: 0 6px 0 -22px;
+}
+.s3-acl-users table td.roles,
+.s3-acl-roles table td.roles {
+  font-size: 0;
+  line-height: 0;
+}
+.s3-acl-users table td.roles span.role-item,
+.s3-acl-roles table td.roles span.role-item {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.s3-acl-users table td.roles span.role-item span.role-name,
+.s3-acl-roles table td.roles span.role-item span.role-name {
+  border-radius: 4px 0 0 4px;
+  background-color: #c2d7f7;
+  font-size: 11px;
+  line-height: 24px;
+  padding: 0 5px 0 10px;
+  display: inline-block;
+  cursor: pointer;
+  height: 24px;
+}
+.s3-acl-users table td.roles span.role-item span.role-name.admin,
+.s3-acl-roles table td.roles span.role-item span.role-name.admin {
+  background-color: #e7433a;
+  border-radius: 4px;
+  padding: 0 10px;
+  color: #FFF;
+}
+.s3-acl-users table td.roles span.role-item span.remove,
+.s3-acl-roles table td.roles span.role-item span.remove {
+  display: inline-block;
+  height: 24px;
+  width: 28px;
+  border-radius: 0 4px 4px 0;
+  font-size: 11px;
+  line-height: 24px;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: #c2d7f7;
+}
+.s3-acl-users table td.roles span.role-item span.remove:hover,
+.s3-acl-roles table td.roles span.role-item span.remove:hover {
+  background-color: #a8c0e8;
+}
+.s3-acl-users table td.roles span.add,
+.s3-acl-roles table td.roles span.add {
+  margin: 0 10px 0 0;
+  background-color: transparent;
+  border: 1px solid #b8bec1;
+  box-shadow: none;
+}
+.s3-acl-users table td.actions,
+.s3-acl-roles table td.actions {
+  color: #15c;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
+}
+.s3-acl-users table td.actions span.control,
+.s3-acl-roles table td.actions span.control {
+  cursor: pointer;
+  margin-left: 18px;
+}
+.s3-acl-users table td.actions span.control:not(.added):hover,
+.s3-acl-roles table td.actions span.control:not(.added):hover {
+  text-decoration: underline;
+}
+.s3-acl-users table td.actions span.control:first-child,
+.s3-acl-roles table td.actions span.control:first-child {
+  margin: 0;
+}
+.s3-acl-users table td.actions span.control span.s3-ico,
+.s3-acl-roles table td.actions span.control span.s3-ico {
+  margin-right: 6px;
+  margin-top: -2px;
+  width: 17px;
+  height: 17px;
+}
+.s3-acl-users table td.actions span.control span.s3-ico.i-copy-svg,
+.s3-acl-roles table td.actions span.control span.s3-ico.i-copy-svg {
+  background-image: url("/my/s3/images/svg_icons/ic_ol_copy.svg");
+}
+.s3-acl-users table td.actions span.control.added,
+.s3-acl-roles table td.actions span.control.added {
+  color: #acacac;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: auto;
+}
+.s3-acl-roles table td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.s3-acl-roles.popup table {
+  margin-top: 30px;
+  border-top: 1px solid #e6e6e6;
+}
+.s3-acl-roles.popup table td.actions span.control:not(.added) span.s3-ico {
+  background: none;
+}
+.s3-acl-roles.popup table th.role-name {
+  padding-left: 15px;
+}
+.s3-acl-roles.popup table td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.s3-acl-roles.popup table td.role-name {
+  padding-left: 15px;
+}
+.s3-acl-users.popup table {
+  margin-top: 30px;
+  border-top: 1px solid #e6e6e6;
+}
+.s3-acl-users.popup table th.user-name,
+.s3-acl-users.popup table td.user-name {
+  padding-left: 15px;
+}
+.s3-acl-users.popup table td.actions span.control:not(.added) span.s3-ico {
+  background: none;
+}
+.s3-acl-tabs {
+  padding: 0;
+  margin: 0 0 16px;
+  list-style: none;
+  border-bottom: 1px solid #b8c1c5;
+  font-size: 0;
+  line-height: 0;
+}
+.s3-acl-tabs > li {
+  padding: 10px 13px 13px;
+  margin: 0 0 -1px;
+  border-radius: 4px 4px 0 0;
+  background-color: #cfd8dc;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid #b8c1c5;
+}
+.s3-acl-tabs > li.current-tab {
+  background-color: transparent;
+  border-color: #b8c1c5;
+  border-bottom-color: #f8f8f8;
+}
+.s3-acl-tabs > li span.ico {
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 10px;
+  display: block;
+}
+.s3-acl-tabs > li span.ico.users {
+  background: url('/my/s3/images/svg_icons/oah-user.svg') 50% 50% no-repeat;
+}
+.s3-acl-tabs > li span.ico.roles {
+  background: url('/my/s3/images/svg_icons/oah-progressteps.svg') 50% 50% no-repeat;
+}
+.s3-acl-tabs > li span.name {
+  text-align: center;
+  display: block;
+  color: #333;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  line-height: normal;
+}
+.acl-note {
+  color: #a7a7a7;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+}
+.acl-note span.s3-ico {
+  margin-right: 10px;
+}
+.acl-form-edit {
+  min-width: 830px;
+}
+.acl-form-edit .form-row {
+  padding: 0 0 20px;
+  color: #212121;
+}
+.acl-form-edit .form-row .boxes li.box .title {
+  cursor: auto;
+}
+.acl-form-edit .form-row .boxes li.box .title .name {
+  color: #333;
+  text-decoration: none !important;
+}
+.acl-form-edit .form-row .hr-title {
+  color: #5681cb;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 15px;
+}
+.acl-form-edit .form-row .hr-title:after {
+  background: #ebebeb none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.acl-form-edit .form-row .hr-title span {
+  background: #fff none repeat scroll 0 0;
+  display: inline-block;
+  padding-right: 12px;
+  position: relative;
+  z-index: 1;
+}
+.acl-form-edit .form-row .acl-form-tabs {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item {
+  margin-bottom: 2px;
+  background-color: #ebebeb;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(68, 68, 68, 0.23);
+  vertical-align: middle;
+  padding: 0 10px 0 10px;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item:after {
+  display: none;
+  content: '';
+  height: 4px;
+  width: 100%;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item .label {
+  cursor: pointer;
+  padding: 0;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item .label:after {
+  clear: both;
+  display: block;
+  content: '';
+  font-size: 0;
+  line-height: 0;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item .label > label {
+  display: block;
+  float: left;
+  cursor: pointer;
+  padding: 12px 0 0;
+  vertical-align: top;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item .label > label span.ico {
+  margin: 0 5px 0 0;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item .label span.title {
+  user-select: none;
+  display: block;
+  color: #212121;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.17px;
+  padding: 10px 10px 9px 0;
+  margin: 0 0 0 23px;
+  line-height: normal;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item .label span.title span {
+  display: inline-block;
+  margin-left: 14px;
+  background: url('/my/s3/images/svg_icons/ic_ar-updown.svg') 0 0 no-repeat;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item .tab-content {
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 25px 30px;
+  margin: 0 -4px 0;
+  display: none;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item .tab-content table.params-items {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item .tab-content table.params-items td {
+  white-space: nowrap;
+  width: 50%;
+  padding: 6px 0;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item .tab-content table.params-items td + td {
+  padding-left: 40px;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item.opened:after {
+  display: block;
+}
+.acl-form-edit .form-row .acl-form-tabs .tab-item.opened .tab-content {
+  display: block;
+}
+.acl-form-edit.view-role .form-row .acl-form-tabs .tab-item .label .title {
+  margin-left: 3px;
+}
+.acl-form-edit.view-role .form-row .acl-form-tabs .tab-item .label .title span.nums {
+  background: none;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  color: #828282;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.13px;
+  margin-left: 5px;
+}
+.acl-form-edit.view-role .tab-content .params-items td label {
+  color: #9f9f9f;
+}
+.acl-form-edit.view-role .tab-content .params-items td label span.item-ico {
+  display: inline-block;
+  opacity: 0;
+  width: 17px;
+  height: 17px;
+  margin-right: 4px;
+  background: url('/my/s3/images/svg_icons/ic_ol-check.svg') 0 0 no-repeat;
+}
+.acl-form-edit.view-role .tab-content .params-items td label.check {
+  color: #212121;
+}
+.acl-form-edit.view-role .tab-content .params-items td label.check span.item-ico {
+  opacity: 1;
+}
+.role-rules-more {
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+  user-select: none;
+  vertical-align: middle;
+}
+.role-rules-more.no-margin {
+  margin: 0;
+}
+.role-rules-more .role-rules-more-btn {
+  border: 1px solid #dcdcdc;
+  border-radius: 11px;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+  padding: 0 20px 0 8px;
+  color: #1155cc;
+  font: normal 12px Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  cursor: pointer;
+}
+.role-rules-more .role-rules-more-btn:after {
+  display: block;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 8px;
+  height: 4px;
+  content: ".";
+  color: transparent;
+  background: url("/my/s3/images/svg_icons/ic_sl_arrow_dw.svg") 0 0 no-repeat;
+  background-size: 8px 4px;
+}
+.role-rules-more .role-rules-more-btn:hover {
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+  background: #DCDCDC;
+}
+.role-rules-more .role-rules-context {
+  padding: 10px 0;
+  margin-top: 4px;
+}
+.role-rules-more .role-rules-context > div {
+  padding: 3px 15px;
+}

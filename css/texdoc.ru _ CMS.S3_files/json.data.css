@@ -1,0 +1,156 @@
+.json-module-wrapper {
+  margin: 0;
+  padding: 0;
+}
+.json-module-wrapper .content-wrapper {
+  padding: 0 !important;
+}
+.json-module-wrapper .json-pagination-wrap:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.json-module-wrapper .json-pagination {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.json-module-wrapper .json-list-wrapper {
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 32px 16px 24px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.json-module-wrapper .json-list-wrapper .title {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.4px;
+  color: #838383;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E9E9E9;
+}
+.json-module-wrapper .json-list-wrapper .title .left {
+  display: flex;
+}
+.json-module-wrapper .json-list-wrapper .title .left .name {
+  margin-left: 16px;
+}
+.json-module-wrapper .json-list-wrapper .title .right {
+  display: flex;
+}
+.json-module-wrapper .json-list-wrapper .title .right .id {
+  min-width: 55px;
+}
+.json-module-wrapper .json-list-wrapper .title .right .created {
+  margin-left: 32px;
+  width: 90px;
+}
+.json-module-wrapper .json-list-wrapper .title .right .updated {
+  margin-left: 32px;
+  width: 90px;
+}
+.json-module-wrapper .json-list-wrapper .title .right .action {
+  width: 136px;
+  margin-left: 32px;
+}
+.json-module-wrapper .json-list-wrapper .body .item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #E9E9E9;
+  padding: 7px 0;
+  align-items: center;
+}
+.json-module-wrapper .json-list-wrapper .body .item .left {
+  display: flex;
+}
+.json-module-wrapper .json-list-wrapper .body .item .left .name {
+  margin-left: 16px;
+}
+.json-module-wrapper .json-list-wrapper .body .item .left .name .objectAction {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  color: #1155CC;
+  margin-right: 12px;
+}
+.json-module-wrapper .json-list-wrapper .body .item .left .name .count {
+  display: inline-flex;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 2px rgba(43, 43, 43, 0.2);
+  border-radius: 12px;
+  min-width: 24px;
+  min-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #838383;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.json-module-wrapper .json-list-wrapper .body .item .right {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.4px;
+  color: #838383;
+}
+.json-module-wrapper .json-list-wrapper .body .item .right .id {
+  min-width: 55px;
+}
+.json-module-wrapper .json-list-wrapper .body .item .right .created {
+  margin-left: 32px;
+  width: 90px;
+}
+.json-module-wrapper .json-list-wrapper .body .item .right .updated {
+  margin-left: 32px;
+  width: 90px;
+}
+.json-module-wrapper .json-list-wrapper .body .item .right .action {
+  margin-left: 32px;
+  width: 136px;
+}
+.json-module-wrapper .json-list-wrapper .body .item .right .action .action-item {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 23px;
+  letter-spacing: -0.4px;
+  color: #1155CC;
+  cursor: pointer;
+}
+.json-module-wrapper .json-list-wrapper .body .item .right .action .action-item .s3-ico.i-gear-svg {
+  background-image: url("/my/s3/images/svg_icons/oah_icons/oah-settings-small-new.svg");
+  width: 24px;
+  height: 24px;
+  background-size: auto;
+}
+.json-module-wrapper .json-list-wrapper .body .item .right .action .objectRemove {
+  margin-left: 24px;
+}
+.json-module-wrapper .json-list-wrapper .body .item .right .action .objectRemove .s3-ico.i-delete-svg {
+  background-image: url("/my/s3/images/svg_icons/oah-trash-new.svg") !important;
+  width: 24px;
+  height: 24px;
+  background-size: auto;
+}
+.json-module-wrapper .json-list-wrapper .body .item:nth-child(odd) {
+  background: #FCFCFC;
+}

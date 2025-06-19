@@ -1,0 +1,416 @@
+.s3-gallery-list {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  min-width: 900px;
+  padding: 20px 20px 30px;
+}
+.s3-gallery-list .action-panel {
+  margin: 0;
+  padding: 0;
+}
+.s3-gallery-list .action-panel:after {
+  clear: both;
+  content: "";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+}
+.s3-gallery-list .action-panel .s3-btn.green {
+  float: left;
+}
+.s3-gallery-list .action-panel .s3-btn.green span.s3-ico {
+  margin-top: -2px;
+}
+.s3-gallery-list .action-panel div.s3-sort {
+  float: right;
+}
+.s3-gallery-list table.boxes {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  padding: 0;
+  margin: 20px 0 0;
+  white-space: nowrap;
+  border-top: 1px solid #e6e6e6;
+}
+.s3-gallery-list table.boxes th {
+  color: #777;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 10px 30px 10px 0;
+  text-align: left;
+}
+.s3-gallery-list table.boxes th.gallery-name {
+  padding-left: 37px;
+}
+.s3-gallery-list table.boxes th.controls {
+  padding-left: 2px;
+}
+.s3-gallery-list table.boxes > tbody > tr {
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #FFFFFF;
+}
+.s3-gallery-list table.boxes > tbody > tr:first-child {
+  border-top: 1px solid #e6e6e6;
+}
+.s3-gallery-list table.boxes > tbody > tr:nth-child(2n-1) {
+  background: #fafafa;
+}
+.s3-gallery-list table.boxes > tbody > tr td {
+  padding: 11px 30px 11px 0;
+  font-family: Arial;
+  color: #777;
+  font-size: 12px;
+}
+.s3-gallery-list table.boxes > tbody > tr td.gallery-name {
+  padding-left: 15px;
+}
+.s3-gallery-list table.boxes > tbody > tr td span.objectName {
+  text-decoration: none;
+  color: #15c;
+  font-size: 13px;
+}
+.s3-gallery-list table.boxes > tbody > tr td span.objectName span.s3-ico {
+  margin-right: 5px;
+}
+.s3-gallery-list table.boxes > tbody > tr td span.objectName:hover {
+  text-decoration: underline;
+}
+.s3-gallery-list table.boxes > tbody > tr td span.s3-badge {
+  line-height: 15px;
+  margin: -1px 0 0 4px;
+  font-weight: 700;
+}
+.s3-gallery-list table.boxes > tbody > tr td.controls {
+  padding: 0;
+}
+.s3-gallery-list table.boxes > tbody > tr td.controls > span {
+  cursor: pointer;
+  color: #15c;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.s3-gallery-list table.boxes > tbody > tr td.controls > span span {
+  margin: -2px 5px 0 0;
+}
+.s3-gallery-list table.boxes > tbody > tr td.controls > span:hover {
+  text-decoration: underline;
+}
+.s3-gallery-list table.boxes > tbody > tr td.controls > span.s3-ico.i-copy-svg {
+  background-image: url("/my/s3/images/svg_icons/ic_ol_copy.svg");
+}
+.s3-gallery-view {
+  padding: 0;
+  margin: 0;
+}
+.s3-gallery-view .s3-actions-panel .s3-ico {
+  margin-top: -2px;
+  margin-right: 5px !important;
+}
+.s3-gallery-view span.image-element span.image-wrapper {
+  border-color: gainsboro;
+}
+.s3-gallery-view span.image-element span.image-wrapper:hover {
+  border-color: #8fc592;
+}
+.s3-gallery-view .s3-gallery-images {
+  padding: 20px 0;
+  margin: 0;
+}
+.s3-gallery-view .s3-gallery-images ul.boxes {
+  text-align: left;
+  font-size: 0;
+  line-height: 0;
+}
+.s3-gallery-view .s3-gallery-images ul.boxes > li {
+  display: inline-block;
+  float: none;
+  height: 174px;
+  margin: 0 30px 30px 0;
+  position: relative;
+  vertical-align: top;
+  width: 168px;
+}
+.s3-gallery-view .s3-gallery-images ul.boxes > li.draggable {
+  height: 189px;
+}
+.s3-gallery-view .s3-gallery-images ul.boxes table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+.s3-gallery-view .s3-gallery-images .image-pagination-wrap .s3-pagelist-wrapper {
+  padding-left: 0;
+}
+.s3-gallery-view span.i-folder-grey-svg {
+  margin: -2px 5px 0 0 !important;
+}
+.s3-gallery-view ul.folders-list {
+  background: #f1f1f1 none repeat scroll 0 0;
+  border-radius: 4px;
+  color: #484848;
+  position: relative;
+  list-style: none;
+  padding: 5px 10px;
+  display: inline-block;
+  min-width: 400px;
+  margin: 0 0 15px;
+}
+.s3-gallery-view ul.folders-list > li {
+  background: #ffffff none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(120, 120, 120, 0.85);
+  display: block;
+  margin: 3px 0;
+  padding: 0;
+  position: relative;
+}
+.s3-gallery-view ul.folders-list > li:after {
+  clear: both;
+  content: ".";
+  display: block;
+  line-height: 0;
+  visibility: hidden;
+}
+.s3-gallery-view ul.folders-list > li .title {
+  padding: 0 10px;
+}
+.s3-gallery-view ul.folders-list > li .title > span {
+  vertical-align: middle;
+}
+.s3-gallery-view ul.folders-list > li .title .name {
+  color: #212121;
+  font: 700 13px/30px Arial;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.s3-gallery-view ul.folders-list > li .remove {
+  cursor: pointer;
+  float: right;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 32px;
+}
+.s3-gallery-view ul.folders-list > li .remove .s3-ico.i-delete-svg {
+  background-color: #f8f8f8;
+  background-position: 8px 6px;
+  border-radius: 0 2px 2px 0;
+  height: 30px;
+  max-width: 32px;
+  vertical-align: top;
+  width: 32px;
+}
+.s3-gallery-view ul.folders-list > li .remove .s3-ico.i-delete-svg:hover {
+  background-color: #ffe2dd;
+}
+.s3-gallery-view li[id^="gallery_image_"] td.draggable {
+  background: rgba(0, 0, 0, 0) url("/my/s3/images/redesign/s3-cm-grid.png") repeat scroll left top;
+  padding: 0;
+  height: 15px;
+  box-sizing: border-box;
+}
+.s3-gallery-view li[id^="gallery_image_"] table {
+  border-collapse: collapse;
+  border: none;
+}
+.s3-gallery-view li[id^="gallery_image_"] {
+  margin: 0;
+  height: 174px;
+  width: 168px;
+  padding: 0;
+}
+.s3-gallery-view li[id^="gallery_image_"].draggable {
+  height: 189px;
+}
+.gallery-form-edit {
+  padding: 0;
+  margin: 0;
+}
+.gallery-form-edit .form-row {
+  padding: 0 0 20px;
+  color: #212121;
+}
+.gallery-form-edit .form-row .form-item-title {
+  color: #212121;
+}
+.gallery-form-edit .form-row .form-item-title.switcher {
+  display: inline-block;
+}
+.gallery-album-list {
+  padding: 0;
+  margin: 0;
+}
+.gallery-album-list ul.boxes {
+  padding: 0;
+  margin: 0;
+}
+.gallery-album-list ul.boxes > li {
+  padding: 0;
+  margin: 0 30px 15px 0 !important;
+  display: inline-block;
+  vertical-align: top;
+  height: 196px;
+  background: none !important;
+}
+.gallery-album-list ul.boxes > li span.album-top-bg {
+  display: block;
+  background: url("/my/s3/images/svg_icons/album-top.svg") 0 0 no-repeat;
+  width: 160px;
+  height: 22px;
+}
+.gallery-album-list ul.boxes > li span.image-wrapper .s3-badge {
+  position: absolute;
+  top: 8px;
+  left: 100%;
+  line-height: 15px;
+  margin-left: -14px;
+  width: 27px;
+  font-weight: 700;
+  z-index: 10;
+}
+.gallery-album-list ul.boxes > li span.image-wrapper span.album-cover {
+  display: block;
+  text-align: center;
+  width: 168px;
+  height: 111px;
+  overflow: hidden;
+}
+.gallery-album-list ul.boxes > li span.image-wrapper span.album-cover img.image {
+  border: none;
+  max-width: 100%;
+}
+.gallery-album-list ul.boxes > li span.image-wrapper span.album-cover span.no-image {
+  display: block;
+  width: 168px;
+  height: 111px;
+  cursor: pointer;
+}
+.gallery-album-list ul.boxes > li span.image-wrapper span.album-info {
+  display: block;
+  text-align: center;
+  height: 35px;
+  color: #929292;
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 10px;
+  margin-top: 4px;
+}
+.gallery-album-list ul.boxes > li span.image-wrapper span.album-info span.album-name {
+  display: block;
+  color: #333;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.gallery-album-list ul.boxes > li span.image-wrapper span.album-controls {
+  display: block;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+}
+.gallery-album-list ul.boxes > li span.image-wrapper span.album-controls span {
+  margin: 0 4px;
+  cursor: pointer;
+}
+.gallery-album-list ul.boxes > li span.image-wrapper span.album-controls span.s3-ico.i-eyehide-svg {
+  cursor: auto;
+}
+.gallery-album-list li[id^="gallery_album_"] {
+  padding: 0;
+  margin: 0 30px 15px 0;
+  display: inline-block;
+  vertical-align: top;
+  height: 196px !important;
+}
+.gallery-album-list li[id^="gallery_album_"] span.image-wrapper .s3-badge {
+  position: absolute;
+  top: 8px;
+  left: 100%;
+  line-height: 15px;
+  margin-left: -14px;
+  width: 27px;
+  font-weight: 700;
+  z-index: 10;
+}
+.gallery-album-list li[id^="gallery_album_"] span.image-wrapper span.album-cover {
+  display: block;
+  text-align: center;
+  width: 168px;
+  height: 111px;
+  overflow: hidden;
+}
+.gallery-album-list li[id^="gallery_album_"] span.image-wrapper span.album-cover img.image {
+  border: none;
+  max-width: 100%;
+}
+.gallery-album-list li[id^="gallery_album_"] span.image-wrapper span.album-cover span.no-image {
+  display: block;
+  width: 168px;
+  height: 111px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  opacity: 0.5;
+}
+.gallery-album-list li[id^="gallery_album_"] span.image-wrapper span.album-cover span.no-image img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.gallery-album-list li[id^="gallery_album_"] span.image-wrapper span.album-cover span.no-image:after {
+  display: inline-block;
+  content: '';
+  vertical-align: middle;
+  height: 100%;
+  font-size: 0;
+}
+.gallery-album-list li[id^="gallery_album_"] span.image-wrapper span.album-info {
+  display: block;
+  text-align: center;
+  height: 35px;
+  color: #929292;
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 10px;
+  margin-top: 4px;
+}
+.gallery-album-list li[id^="gallery_album_"] span.image-wrapper span.album-info span.album-name {
+  display: block;
+  color: #333;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.gallery-album-list li[id^="gallery_album_"] span.image-wrapper span.album-controls {
+  display: block;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+}
+.gallery-album-list li[id^="gallery_album_"] span.image-wrapper span.album-controls span {
+  margin: 0 4px;
+  cursor: pointer;
+}
+.gallery-form-edit .item-row .item-col #page_seo {
+  border-top: 1px solid #ebebeb;
+  margin-top: 10px;
+  padding-left: 0 !important;
+}

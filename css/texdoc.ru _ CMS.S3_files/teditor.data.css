@@ -1,0 +1,1798 @@
+.s3-content #editorWrapper {
+  padding: 0 10px 20px;
+}
+.s3-content #editorWrapper.fullscreen {
+  padding-top: 0;
+}
+.s3-content #editorWrapper.fullscreen #templatesList {
+  overflow: auto;
+  height: 100%;
+}
+.s3-content #editorWrapper.fullscreen #editorContent .tab-body .tpl-body-wrapper .tpl-body-left-side {
+  display: none;
+}
+.s3-content #editorWrapper.fullscreen #editorContent #ace_editor_wrapper {
+  left: 0;
+}
+.s3-content #editorWrapper.fullscreen .main-tabs-wrapper {
+  position: relative;
+  height: 0;
+  padding-top: 16px;
+  overflow: hidden;
+  background: url("/my/s3/images/svg_icons/ic_sl_arrow_dw.svg") center 6px no-repeat;
+}
+.s3-content #editorWrapper.fullscreen .main-tabs-wrapper:hover,
+.s3-content #editorWrapper.fullscreen .main-tabs-wrapper:active,
+.s3-content #editorWrapper.fullscreen .main-tabs-wrapper.active {
+  height: auto;
+  background: none;
+  overflow: visible;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs {
+  margin: 0 0 15px;
+  padding: 0 0 0 2px;
+  list-style: none;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs li {
+  float: left;
+  position: relative;
+  margin: 0 1px 0 0;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs li span.s3-btn {
+  margin: 0 0 0 -1px;
+  border-radius: 0;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs li.first span {
+  border-radius: 3px 0 0 3px;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs li.last span {
+  border-radius: 0 3px 3px 0;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs li.one span {
+  border-radius: 3px;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs li.bdl {
+  border-left: 4px solid #cdcccc;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs li .context-menu {
+  margin-top: 4px;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#teTabs {
+  margin-right: 10px;
+  float: left;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#teTabs li .f-switcher {
+  width: auto !important;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#themeTabs {
+  margin-right: 40px;
+  height: 30px;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#themeTabs.hidden {
+  display: none;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#themeTabs li.active span.s3-btn {
+  border-bottom: 3px solid #25992a;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#tplTabs {
+  clear: both;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#tplTabs li {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#tplTabs li span.name {
+  font: normal 13px Arial, helvetica, sans-serif;
+  line-height: 26px;
+  color: #424242;
+  border: 1px solid #e4e4e4;
+  padding: 0 15px;
+  display: block;
+  cursor: pointer;
+  background: #f0f0f0;
+  height: 26px;
+  border-radius: 14px;
+  position: relative;
+  background: #fafafa;
+  background: -moz-linear-gradient(top, #fafafa 0%, #f1f1f1 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #f1f1f1));
+  background: -webkit-linear-gradient(top, #fafafa 0%, #f1f1f1 100%);
+  background: -o-linear-gradient(top, #fafafa 0%, #f1f1f1 100%);
+  background: -ms-linear-gradient(top, #fafafa 0%, #f1f1f1 100%);
+  background: linear-gradient(top bottom, #fafafa 0%, #f1f1f1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#f1f1f1', GradientType=0);
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#tplTabs li span.name span.s3-ico.i-close-small {
+  background: url(/my/s3/images/redesign/close_icon_gray.png) 0 0 no-repeat #ffffff;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #b0b0b0;
+  border-radius: 7px;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  display: none;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#tplTabs li span.name span.s3-ico.i-close-small:hover {
+  background-color: #dbd9d9;
+  background-position: 100% 0;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#tplTabs li span.name:hover {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f3f3f3));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+  background: linear-gradient(top bottom, #ffffff 0%, #f3f3f3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f3f3f3', GradientType=0);
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#tplTabs li span.name:hover span.s3-ico.i-close-small {
+  display: block;
+  opacity: 1 !important;
+  margin: 0 !important;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#tplTabs li span.name.global {
+  color: #f7922d;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#tplTabs li span.name .s3-ico {
+  margin: -3px 5px 0 -10px;
+  opacity: 0.5;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#tplTabs li.active span.name {
+  background: #f1f1f1;
+  background: -moz-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f1f1), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
+  background: -o-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
+  background: linear-gradient(top bottom, #f1f1f1 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#ffffff', GradientType=0);
+  border-color: #777777;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs#tplTabs li.unsaved span.name {
+  background: #f1f1f1;
+  background: -moz-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f1f1), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
+  background: -o-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #f1f1f1 0%, #ffffff 100%);
+  background: linear-gradient(top bottom, #f1f1f1 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#ffffff', GradientType=0);
+  border-color: #CC3333;
+  color: #CC3333;
+}
+.s3-content #editorWrapper .main-tabs-wrapper .te-tabs:after {
+  display: block;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  line-height: 0;
+}
+.s3-content #editorWrapper .main-tabs-wrapper:after {
+  display: block;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  line-height: 0;
+}
+.s3-content #editorWrapper #editorContent {
+  position: relative;
+}
+.s3-content #editorWrapper #editorContent .tab-body {
+  display: none;
+}
+.s3-content #editorWrapper #editorContent .tab-body.visible {
+  display: block;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-title {
+  margin: 0;
+  padding-right: 5px;
+  position: relative;
+  border-bottom: 1px solid #d4d4d4;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-title span.template_id {
+  font-size: 12px;
+  color: #666666;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-title .user-activity-info {
+  font-size: 16px;
+  color: #ff0000;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper {
+  display: table;
+  width: 100%;
+  background: #f4f4f4;
+  line-height: 0;
+  font-size: 0;
+  border-bottom: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-left-side,
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-right-side {
+  display: table-cell;
+  vertical-align: top;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-left-side {
+  width: 210px;
+  min-width: 205px;
+  padding: 10px;
+  border-left: 1px solid #d4d4d4;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-left-side .buttons {
+  margin-bottom: 10px;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-left-side .fields {
+  padding-top: 10px;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-left-side .fields hr {
+  margin: 5px 0;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-left-side .tpl-field {
+  margin-bottom: 10px;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-left-side .tpl-field label .field-title {
+  font: normal 11px Arial, Helvetica, sans-serif;
+  padding-bottom: 2px;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-left-side .tpl-field label .s3-input-text,
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-left-side .tpl-field label .chzn-container {
+  width: 210px !important;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-left-side .tpl-field label #templateGroupParent + .chzn-container .chzn-drop {
+  width: 300px !important;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-right-side {
+  border-left: 1px solid #d4d4d4;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-right-side .top-line {
+  padding: 0 5px 0 0;
+  line-height: 0;
+  font-size: 0;
+  border-bottom: 1px solid #d4d4d4;
+  height: 24px;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-right-side .top-line .template-data {
+  float: right;
+  margin-right: 40px;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-right-side .top-line .highlight {
+  float: right;
+  font-size: 16px;
+  height: 18px;
+  padding: 2px 0;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-right-side .top-line .highlight .s3-select.small + .chzn-container {
+  width: 150px;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-right-side .top-line .highlight .s3-select.small + .chzn-container a.chzn-single {
+  height: 20px !important;
+  line-height: 20px !important;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-right-side .top-line .highlight .s3-select.small + .chzn-container a.chzn-single > div b {
+  background-position: -60px -185px !important;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-right-side .top-line .highlight .s3-select.small + .chzn-container.chzn-with-drop .chzn-drop {
+  left: -59px;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-right-side .top-line .highlight .s3-select.small + .chzn-container.chzn-with-drop a.chzn-single > div b {
+  background-position: -163px -238px !important;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-right-side .top-line:after {
+  display: block;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  line-height: 0;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-right-side .tpl-body {
+  width: 100%;
+  height: 650px;
+  margin: 0;
+  border: 0;
+  padding: 10px;
+  box-shadow: none;
+}
+.s3-content #editorWrapper #editorContent .tab-body .tpl-body-wrapper .tpl-body-right-side #bodyVal {
+  display: none;
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper {
+  display: inline-block;
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper .template-theme {
+  display: inline-block;
+  font: normal 12px Arial, Helvetica, sans-serif;
+  color: #999999;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  cursor: pointer;
+  padding: 0 8px;
+  border-right: 1px solid #d4d4d4;
+  background: #fafafa;
+  background: -moz-linear-gradient(top, #fafafa 0%, #f1f1f1 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #f1f1f1));
+  background: -webkit-linear-gradient(top, #fafafa 0%, #f1f1f1 100%);
+  background: -o-linear-gradient(top, #fafafa 0%, #f1f1f1 100%);
+  background: -ms-linear-gradient(top, #fafafa 0%, #f1f1f1 100%);
+  background: linear-gradient(top bottom, #fafafa 0%, #f1f1f1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#f1f1f1', GradientType=0);
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper .template-theme:after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper .template-theme:hover:after {
+  background: #c4c4c4;
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper .template-theme.active {
+  color: #000000;
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper .template-theme.active:after {
+  background: #000000;
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper .template-theme.unsaved {
+  color: #cc3333 !important;
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper .template-theme.unsaved:before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1px;
+  height: 3px;
+  background: #cc3333;
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper .template-theme.theme {
+  color: rgba(26, 166, 62, 0.5);
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper .template-theme.theme.active {
+  color: #1aa63e;
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper .template-theme.theme.active:after {
+  background: #1aa63e;
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper .template-theme.sandbox {
+  color: rgba(247, 146, 45, 0.5);
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper .template-theme.sandbox.active {
+  color: #f7922d;
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper .template-theme.sandbox.active:after {
+  background: #f7922d;
+}
+.s3-content #editorWrapper #editorContent .tab-body .template-themes-wrapper:after {
+  display: block;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  line-height: 0;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-title {
+  padding: 13px 20px;
+  background: url(/my/s3/images/redesign/s3-cm-grid.png) left top repeat;
+  color: #333333;
+  font: normal 20px Arial, Helvetica, sans-serif;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-title .theme-name {
+  color: #64a61a;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-edit {
+  padding: 20px 15px;
+  background: #eeeeee;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-edit .template-themes-wrapper {
+  display: block;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-edit .img-info {
+  border: none;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-edit .img-info tr {
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-edit .img-info tr td {
+  padding: 0;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-edit .img-info tr td.label {
+  width: 1px;
+  padding-left: 10px;
+  padding-right: 15px;
+  color: #767676;
+  font: normal 13px Arial, Helvetica, sans-serif;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-edit .img-info tr td.info {
+  width: 135px;
+  padding-right: 10px;
+  color: #333333;
+  font: normal 12px Arial, Helvetica, sans-serif;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-edit .upload-file {
+  margin: 0;
+  padding: 20px 0 20px 0;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-edit .drop-zone-wrap .drop-zone {
+  display: inline-block;
+  text-align: center;
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: auto;
+  line-height: 0;
+  font-size: 0;
+  border: 1px dashed #989898;
+  margin: 5px;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-edit .drop-zone-wrap .big-image-alert {
+  background: url(/my/s3/images/redesign/sandbox-no-image.png) left center no-repeat;
+  height: 130px;
+  padding: 35px 37px 0 165px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #333333;
+  font: normal 12px Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-edit .drop-zone-wrap .big-image-alert a {
+  color: #1155cc;
+  text-decoration: underline;
+}
+.s3-content #editorWrapper #editorContent .tab-body .s3-sb-img-edit-wrap .img-edit .drop-zone-wrap .big-image-alert a:hover {
+  text-decoration: none;
+}
+.s3-content #editorWrapper #editorContent #ace_editor_wrapper {
+  position: absolute;
+  left: 232px;
+  top: 75px;
+  right: 0;
+  bottom: 1px;
+}
+.s3-content #editorWrapper #editorContent #ace_editor_wrapper.hidden {
+  display: none;
+}
+.s3-content #editorWrapper .tpl-title {
+  padding: 13px 20px;
+  margin-bottom: 12px;
+  background: #eeeeee;
+  border-radius: 4px 4px 0 0;
+  color: #333333;
+  font: normal 20px Arial, Helvetica, sans-serif;
+}
+.s3-content #editorWrapper .tpl-title > span.theme {
+  color: #1aa63e;
+}
+.s3-content #editorWrapper .tpl-title > span.sandbox {
+  color: #f7922d;
+}
+.s3-content #editorWrapper .tpl-data {
+  padding: 13px 0 0;
+  background: url(/my/s3/images/redesign/s3-cm-grid.png) left top repeat;
+  color: #333333;
+  font: normal 20px Arial, Helvetica, sans-serif;
+}
+.s3-content #editorWrapper .tpl-data .tpl-name {
+  padding: 0 20px 13px;
+}
+.s3-content #editorWrapper .tpl-data .tpl-name .s3-ico.i-pencil {
+  cursor: pointer;
+  margin: 0 0 0 5px;
+}
+.s3-content #editorWrapper .tpl-data .tpl-panel {
+  display: none;
+  padding: 10px 20px;
+  background: #EEEEEE;
+  border-top: 1px solid #c6c6c6;
+}
+.s3-content #editorWrapper .tpl-data .tpl-panel label {
+  display: inline-block;
+  vertical-align: middle;
+  font: normal 13px Arial, helvetica, sans-serif;
+  color: #333333;
+  margin-right: 15px;
+}
+.s3-content #editorWrapper .tpl-data .tpl-panel label input,
+.s3-content #editorWrapper .tpl-data .tpl-panel label span.ico {
+  margin-left: 5px;
+}
+.s3-content #editorWrapper .tpl-data .tpl-panel .chzn-container {
+  margin-right: 15px;
+}
+.s3-content #editorWrapper .tpl-data .tpl-second-panel {
+  padding: 10px 5px;
+  background: #EEEEEE;
+  border-top: 1px solid #c6c6c6;
+}
+.s3-content #editorWrapper .tpl-data .tpl-second-panel label {
+  margin-left: 15px;
+  display: inline-block;
+}
+.s3-content #editorWrapper .tpl-group-add {
+  padding: 10px;
+  display: none;
+  background: #f2f2f2;
+  margin-bottom: 10px;
+}
+.s3-content #editorWrapper .tpl-list-controls {
+  padding: 0 15px 8px 15px;
+}
+.s3-content #editorWrapper .tpl-list-controls .tpl-search {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 0;
+  font-size: 0;
+}
+.s3-content #editorWrapper .tpl-list-controls .tpl-search .tpl-search-reset {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  height: 24px;
+  width: 24px;
+  background-position: -185px -208px;
+  cursor: pointer;
+}
+.s3-content #editorWrapper .tpl-list-controls .tpl-search .tpl-search-text {
+  margin: 0;
+  padding: 0 10px;
+  width: 230px;
+  background: #fff;
+  border: 1px solid #cfcfcf;
+  border-right: none;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+  font: normal 13px/24px Arial, Helvetica, sans-serif;
+  color: #686868;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  height: 24px;
+}
+.s3-content #editorWrapper .tpl-list-controls .tpl-search .tpl-search-butt {
+  background: url(/my/s3/images/redesign/s3-icons.png) -128px -28px no-repeat #ffffff;
+  padding: 0;
+  margin: 0;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #cfcfcf;
+  border-left: none;
+  font: normal 13px/24px Arial, helvetica, sans-serif;
+  width: 30px;
+  cursor: pointer;
+  height: 24px;
+}
+.s3-content #editorWrapper .tpl-list-controls .tpl-search .tpl-search-radiogroup {
+  font: normal 13px normal Arial, Helvetica, sans-serif;
+  color: #696969;
+  margin: 2px 0 0 12px;
+}
+.s3-content #editorWrapper .tpl-list-controls .tpl-search .tpl-search-radiogroup label {
+  margin: 0 2px 0 5px;
+}
+.s3-content #editorWrapper .tpl-list-controls .select-theme {
+  display: inline-block;
+}
+.s3-content #editorWrapper .tpl-list-controls .select-theme label {
+  font: bold 13px Arial, helvetica, sans-serif;
+}
+.s3-content #editorWrapper .tpl-list-controls .update-tab {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+.s3-content #editorWrapper .tpl-list-controls .update-tab .dashed {
+  color: #1155cc;
+  border-bottom: 1px dashed #1155cc;
+  font: normal 13px normal Arial, Helvetica, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.s3-content #editorWrapper #templatesList .tpl-title .tpls-upload {
+  display: inline-block;
+}
+.s3-content #editorWrapper #templatesList .tpl-title .tpls-upload label.s3-file {
+  vertical-align: top;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table {
+  width: 100%;
+  padding: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td {
+  padding: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  vertical-align: top;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-groups-wrap {
+  width: 290px;
+  padding: 0 10px 0 0;
+  vertical-align: top;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-groups-wrap #groupsTree,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-groups-wrap #last_modified_tpls {
+  padding-left: 27px;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result.hidden {
+  display: none;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box {
+  display: none;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box {
+  padding-bottom: 40px;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result.visible,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box.visible {
+  display: block;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result .tpl-group-title,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box .tpl-group-title {
+  padding: 5px 20px;
+  background: url(/my/s3/images/redesign/s3-cm-grid.png) left top repeat;
+  color: #333333;
+  font: normal 18px Arial, Helvetica, sans-serif;
+  margin: 0;
+  vertical-align: top;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr {
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr:hover,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr:hover {
+  background: #f5f5f5;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr:hover .tpl-controls .s3-ico,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr:hover .tpl-controls .s3-ico {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td {
+  width: auto;
+  vertical-align: middle;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td span.desc,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td span.desc {
+  font: normal 11px Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.global span.name,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.global span.name {
+  color: #888888;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td span.name,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td span.name {
+  color: #000;
+  font: 13px Arial, Helvetica, sans-serif;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td span.name:hover,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td span.name:hover {
+  text-decoration: underline;
+  color: #1155cc;
+  cursor: pointer;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td span.name.active,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td span.name.active,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td span.name.active:hover,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td span.name.active:hover {
+  color: #339933;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td span.name.bold,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td span.name.bold {
+  font-weight: 700;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td span.name a,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td span.name a {
+  color: #6f6f6f;
+  text-decoration: underline;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td span.name a:hover,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td span.name a:hover {
+  text-decoration: none;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.checkbox,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.checkbox,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-name,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-name,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-context,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-context,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-filename,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-filename,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-controls,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-controls {
+  width: 10px;
+  white-space: nowrap;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.checkbox,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.checkbox {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-name,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-name {
+  width: 240px;
+  padding-right: 25px;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-name span.template_id,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-name span.template_id {
+  font-size: 10px;
+  color: #666666;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-context,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-context {
+  width: 60px;
+  padding-right: 5px;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-context .local-context,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-context .local-context {
+  color: #076dd2;
+  font: bold 11px Arial, Helvetica, sans-serif;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-context .local-context .s3-ico,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-context .local-context .s3-ico {
+  visibility: hidden;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-context .local-context:hover .title,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-context .local-context:hover .title {
+  text-decoration: none;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-context .global-context,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-context .global-context {
+  color: #f7922d;
+  font: bold 11px Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-context .global-context:hover .title,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-context .global-context:hover .title {
+  text-decoration: underline;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-filename,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-filename {
+  width: 245px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-modified,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-modified {
+  width: 125px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.tpl-controls .s3-ico,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.tpl-controls .s3-ico {
+  cursor: pointer;
+  margin: 0 7px;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-search-result table.tpl-list tr td.no-tpl,
+.s3-content #editorWrapper #templatesList .tpl-list-table td.tpl-list-wrap .tpl-list-box table.tpl-list tr td.no-tpl {
+  padding: 10px;
+  text-decoration: none;
+  color: #333333;
+  font: normal 13px Arial, helvetica, sans-serif;
+}
+.s3-content #editorWrapper #teTemplate {
+  position: relative;
+}
+.s3-content #editorWrapper #teTemplate .mtBody {
+  display: none;
+}
+.s3-content #editorWrapper #teTemplate .mtBody textarea {
+  width: 100%;
+  height: 525px;
+  border-radius: 0;
+  box-shadow: none;
+  border: 2px solid #4fb954;
+}
+.s3-content #editorWrapper #teTemplate #editor {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  min-width: 980px;
+}
+.s3-content #editorWrapper #tabsMainLinks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.s3-content #editorWrapper #tabsMainLinks:after {
+  display: block;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  line-height: 0;
+}
+.s3-content #editorWrapper #tabsMainLinks li {
+  float: left;
+  line-height: 28px;
+  padding: 0 10px;
+  border: 1px solid #E4E4E4;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.s3-content #editorWrapper #tabsMainLinks li.active {
+  border-color: #535353;
+}
+.s3-content #editorWrapper #tabsMainLinks li.unsaved {
+  font-weight: bold;
+}
+.s3-content #editorWrapper #tabsMainLinks li[global="true"] {
+  color: #f7922d;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls {
+  padding: 10px 20px;
+  background: url(/my/s3/images/redesign/s3-cm-grid.png) left top repeat;
+  margin-top: 2px;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls .s3-btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls .s3-btn .publicate {
+  color: #25992a;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls .s3-btn .publicate .s3-ico {
+  margin: 0 5px 0 -3px;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls form#sandbox_access {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin: 0;
+  background: #fefefe;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#f1f1f1', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 0 0 #ffffff, 0 2px 2px -1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 0 0 #ffffff, 0 2px 2px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 0 #ffffff, 0 2px 2px -1px rgba(0, 0, 0, 0.2);
+  behavior: url(/my/s3/css/redesign/pie.htc);
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls form#sandbox_access label.add_user {
+  display: inline-block;
+  position: relative;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls form#sandbox_access label.add_user #add_user {
+  width: 150px;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls form#sandbox_access label.add_user #access_users_array {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #ffffff;
+  z-index: 100;
+  margin-top: 3px;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls form#sandbox_access label.add_user #access_users_array.hidden {
+  display: none;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls form#sandbox_access label.add_user #access_users_array .item {
+  padding: 3px;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls form#sandbox_access label.add_user #access_users_array .item:hover {
+  background: #E4E4E4;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls form#sandbox_access label.add_user #access_users_array .item .s3-ico {
+  cursor: pointer;
+  float: right;
+  height: 12px;
+  background-position: -192px -213px;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls form#sandbox_access label.add_user #access_users_array .item:after {
+  display: block;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  line-height: 0;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls form#sandbox_access .s3-btn {
+  margin: 0;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls form#sandbox_access .s3-btn.rm-10 {
+  margin-right: 10px;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-list-controls form#sandbox_access .s3-btn.rm-20 {
+  margin-right: 20px;
+}
+.s3-content #editorWrapper #sandboxList .sandbox-templates-list .template-list-title {
+  color: #333333;
+  font: normal 18px Arial, Helvetica, sans-serif;
+  padding: 15px 20px;
+}
+.s3-content #editorWrapper #sandboxList #theme-files .ordered-template-list .template-list-title {
+  color: #333333;
+  font: normal 18px Arial, Helvetica, sans-serif;
+  padding: 15px 20px;
+}
+.s3-content #editorWrapper #sandboxList #theme-files .ordered-template-list .s3-clipboard-btn {
+  cursor: pointer;
+  margin-left: 5px;
+  opacity: 0.5;
+}
+.s3-content #editorWrapper #sandboxList #theme-files .ordered-template-list .s3-clipboard-btn.zeroclipboard-is-hover {
+  opacity: 1;
+}
+.s3-content #editorWrapper #sandboxList #theme-files .ordered-template-list .hidden {
+  display: none;
+}
+.s3-content .design-files .design-files-title {
+  margin: 1px 0;
+  padding: 13px 20px;
+  background: url(/my/s3/images/redesign/s3-cm-grid.png) left top repeat;
+  color: #333333;
+  font: normal 20px Arial, Helvetica, sans-serif;
+}
+.s3-content .design-files .design-files-title small {
+  display: inline-block;
+}
+.s3-content .design-files .design-files-title .archive-download {
+  float: right;
+  position: relative;
+}
+.s3-content .design-files .design-files-title .archive-download > .s3-btn {
+  margin-left: 0;
+}
+.s3-content .design-files .design-files-title .archive-download #createFile {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background: #ffffff;
+  width: 290px;
+  border: 1px solid #cdcccc;
+  border-radius: 3px;
+  margin-top: 2px;
+}
+.s3-content .design-files .design-files-panel {
+  margin: 3px 0;
+  padding: 3px 10px 3px 10px;
+  line-height: 0;
+  font-size: 0;
+  position: relative;
+  background: #f5f5f5;
+}
+.s3-content .design-files .design-files-panel:after {
+  display: block;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  line-height: 0;
+}
+.s3-content .design-files .design-files-panel .go-to-back-folder {
+  width: 30px;
+  height: 28px;
+  margin-right: 45px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+.s3-content .design-files .design-files-panel form,
+.s3-content .design-files .design-files-panel .s3-btn,
+.s3-content .design-files .design-files-panel .s3-input-text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.s3-content .design-files .design-files-panel .s3-btn.mgr40 {
+  margin-right: 40px;
+}
+.s3-content .design-files .design-files-panel form {
+  display: inline-block;
+  vertical-align: middle;
+}
+.s3-content .design-files .design-files-panel form label {
+  font: bold 13px normal Arial, helvetica, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+}
+.s3-content .design-files .design-files-panel form.create-folder {
+  margin: 5px 25px;
+}
+.s3-content .design-files table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.s3-content .design-files table tr {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+}
+.s3-content .design-files table tr td {
+  border: none;
+  border-spacing: 0;
+  border-collapse: collapse;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.s3-content .design-files table tr td span.desc {
+  font: normal 11px Arial, Helvetica, sans-serif;
+  color: #6f6f6f;
+}
+.s3-content .design-files table tr td span.desc.bold {
+  font-weight: bold;
+}
+.s3-content .design-files table tr td span.desc a {
+  color: #6f6f6f;
+  text-decoration: underline;
+}
+.s3-content .design-files table tr td span.desc a:hover {
+  text-decoration: none;
+}
+.s3-content .design-files table tr td span.desc .s3-clipboard-btn {
+  cursor: pointer;
+  margin-left: 5px;
+  opacity: 0.5;
+}
+.s3-content .design-files table tr td span.desc .s3-clipboard-btn.zeroclipboard-is-hover {
+  opacity: 1;
+}
+.s3-content .design-files table tr td span.name {
+  color: #333333;
+  font: normal 13px Arial, Helvetica, sans-serif;
+}
+.s3-content .design-files table tr td span.name:hover {
+  text-decoration: underline;
+  color: #1155cc;
+  cursor: pointer;
+}
+.s3-content .design-files table tr:hover {
+  background: #f5f5f5;
+}
+.s3-content .design-files table tr:hover .controls .s3-ico {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.s3-content .design-files table tr.hidden {
+  display: none;
+}
+.s3-content .design-files table.files td {
+  width: 1px;
+  white-space: nowrap;
+}
+.s3-content .design-files table.files td:last-child {
+  width: auto;
+}
+.s3-content .design-files table.files .go-up {
+  padding: 5px 0 5px 30px;
+}
+.s3-content .design-files table.files .go-up span {
+  color: #6f6f6f;
+  text-decoration: none;
+  cursor: pointer;
+}
+.s3-content .design-files table.files .go-up span:hover {
+  color: #6f6f6f;
+  text-decoration: underline;
+}
+.s3-content .design-files table.files .checkbox {
+  padding-left: 15px;
+}
+.s3-content .design-files table.files .f-filename {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.s3-content .design-files table.files .f-filename .s3-ico {
+  margin-right: 12px;
+}
+.s3-content .design-files table.files .f-filename .file-rename-wrapper {
+  margin-left: 10px;
+  position: relative;
+}
+.s3-content .design-files table.files .f-filename .file-rename-wrapper .s3-ico {
+  margin: 0;
+}
+.s3-content .design-files table.files .f-filename .file-rename-wrapper .s3-ico.i-pencil {
+  opacity: 0.3;
+  cursor: pointer;
+}
+.s3-content .design-files table.files .f-filename .file-rename-wrapper .s3-ico.i-pencil:hover {
+  opacity: 1;
+}
+.s3-content .design-files table.files .f-filename .file-rename-wrapper .rename-form-wrapper {
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  z-index: 100;
+  margin-top: 8px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #cccccc;
+}
+.s3-content .design-files table.files .f-filename .file-rename-wrapper .rename-form-wrapper:before {
+  bottom: 100%;
+  left: 15px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #cccccc;
+  border-width: 6px;
+}
+.s3-content .design-files table.files .f-filename .file-rename-wrapper .rename-form-wrapper.hidden {
+  display: none;
+}
+.s3-content .design-files table.files .f-filename .file-rename-wrapper .rename-form-wrapper .s3-btn {
+  margin: 0 0 0 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.s3-content .design-files table.files .f-foldername .name {
+  font-weight: bold;
+}
+.s3-content .design-files table.files .f-filesize {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100px;
+  white-space: nowrap;
+}
+.s3-content .design-files table.files .date {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 1px;
+  white-space: nowrap;
+}
+.s3-content .design-files table.files .space {
+  width: 150px;
+}
+.s3-content .design-files table.files .controls {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 1px;
+  white-space: nowrap;
+}
+.s3-content .design-files table.files .controls .s3-ico {
+  cursor: pointer;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.s3-content .update-tab {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+.s3-content .update-tab .dashed {
+  color: #1155cc;
+  border-bottom: 1px dashed #1155cc;
+  font: normal 13px normal Arial, Helvetica, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.s3-content #uploadFile {
+  float: right;
+}
+.s3-content #uploadFile.no-float {
+  float: none;
+  display: inline-block;
+  padding: 5px !important;
+}
+.s3-content #uploadFile .fileform {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  height: 22px;
+  overflow: hidden;
+  padding: 2px;
+  position: relative;
+  text-align: left;
+  width: 270px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+.s3-content #uploadFile .fileform .selectbutton {
+  float: right;
+  margin: 0;
+  height: 22px;
+  line-height: 22px;
+}
+.s3-content #uploadFile .fileform #userfile,
+.s3-content #uploadFile .fileform #new_file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  height: 30px;
+  font-size: 0;
+  line-height: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+.s3-content #uploadFile .fileform #fileformlabel {
+  background-color: #FFFFFF;
+  float: left;
+  height: 22px;
+  overflow: hidden;
+  padding: 0 2px;
+  text-align: left;
+  width: 200px;
+  font: normal 12px Arial;
+  line-height: 22px;
+}
+.s3-content #uploadFile.tpls {
+  padding: 0 5px 1px 5px;
+}
+.s3-content #uploadFile.tpls .s3-btn {
+  margin-left: 0;
+  margin-right: 0;
+}
+.s3-content #uploadFile.tpls label {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0;
+  font-size: 0;
+}
+.s3-content #uploadFile.tpls label .fileform {
+  width: 180px;
+  height: 18px;
+}
+.s3-content #uploadFile.tpls label .fileform #fileformlabel {
+  width: 110px;
+  height: 18px;
+  line-height: 18px;
+}
+.s3-content #uploadFile.tpls label .fileform #userfile {
+  height: 18px;
+}
+.s3-content #uploadFile.tpls label .fileform .selectbutton {
+  float: right;
+  margin: 0;
+  height: 18px !important;
+  line-height: 18px !important;
+}
+#editorWrapper .sandbox-templates-list,
+.s3-popup .popup-body .sandbox-templates-list,
+#editorWrapper .ordered-template-list,
+.s3-popup .popup-body .ordered-template-list {
+  position: relative;
+}
+#editorWrapper .sandbox-templates-list .template-list-title,
+.s3-popup .popup-body .sandbox-templates-list .template-list-title,
+#editorWrapper .ordered-template-list .template-list-title,
+.s3-popup .popup-body .ordered-template-list .template-list-title {
+  color: #333333;
+  font: normal 18px Arial, Helvetica, sans-serif;
+  padding: 15px 20px;
+}
+#editorWrapper .sandbox-templates-list table,
+.s3-popup .popup-body .sandbox-templates-list table,
+#editorWrapper .ordered-template-list table,
+.s3-popup .popup-body .ordered-template-list table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#editorWrapper .sandbox-templates-list table tr,
+.s3-popup .popup-body .sandbox-templates-list table tr,
+#editorWrapper .ordered-template-list table tr,
+.s3-popup .popup-body .ordered-template-list table tr {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  background: #f5f5f5;
+}
+#editorWrapper .sandbox-templates-list table tr.hidden,
+.s3-popup .popup-body .sandbox-templates-list table tr.hidden,
+#editorWrapper .ordered-template-list table tr.hidden,
+.s3-popup .popup-body .ordered-template-list table tr.hidden {
+  display: none;
+}
+#editorWrapper .sandbox-templates-list table tr td,
+.s3-popup .popup-body .sandbox-templates-list table tr td,
+#editorWrapper .ordered-template-list table tr td,
+.s3-popup .popup-body .ordered-template-list table tr td {
+  border: none;
+  border-spacing: 0;
+  border-collapse: collapse;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+#editorWrapper .sandbox-templates-list table tr td span.desc,
+.s3-popup .popup-body .sandbox-templates-list table tr td span.desc,
+#editorWrapper .ordered-template-list table tr td span.desc,
+.s3-popup .popup-body .ordered-template-list table tr td span.desc {
+  font: normal 11px Arial, Helvetica, sans-serif;
+  color: #6f6f6f;
+}
+#editorWrapper .sandbox-templates-list table tr td span.desc.bold,
+.s3-popup .popup-body .sandbox-templates-list table tr td span.desc.bold,
+#editorWrapper .ordered-template-list table tr td span.desc.bold,
+.s3-popup .popup-body .ordered-template-list table tr td span.desc.bold {
+  font-weight: bold;
+}
+#editorWrapper .sandbox-templates-list table tr td span.desc a,
+.s3-popup .popup-body .sandbox-templates-list table tr td span.desc a,
+#editorWrapper .ordered-template-list table tr td span.desc a,
+.s3-popup .popup-body .ordered-template-list table tr td span.desc a {
+  color: #6f6f6f;
+  text-decoration: underline;
+}
+#editorWrapper .sandbox-templates-list table tr td span.desc a:hover,
+.s3-popup .popup-body .sandbox-templates-list table tr td span.desc a:hover,
+#editorWrapper .ordered-template-list table tr td span.desc a:hover,
+.s3-popup .popup-body .ordered-template-list table tr td span.desc a:hover {
+  text-decoration: none;
+}
+#editorWrapper .sandbox-templates-list table tr td span.name,
+.s3-popup .popup-body .sandbox-templates-list table tr td span.name,
+#editorWrapper .ordered-template-list table tr td span.name,
+.s3-popup .popup-body .ordered-template-list table tr td span.name {
+  color: #333333;
+  font: normal 13px Arial, Helvetica, sans-serif;
+}
+#editorWrapper .sandbox-templates-list table tr td span.name:hover,
+.s3-popup .popup-body .sandbox-templates-list table tr td span.name:hover,
+#editorWrapper .ordered-template-list table tr td span.name:hover,
+.s3-popup .popup-body .ordered-template-list table tr td span.name:hover {
+  text-decoration: underline;
+  color: #1155cc;
+  cursor: pointer;
+}
+#editorWrapper .sandbox-templates-list table tr td.status .published,
+.s3-popup .popup-body .sandbox-templates-list table tr td.status .published,
+#editorWrapper .ordered-template-list table tr td.status .published,
+.s3-popup .popup-body .ordered-template-list table tr td.status .published {
+  color: #25992a;
+}
+#editorWrapper .sandbox-templates-list table tr td.status .not-published,
+.s3-popup .popup-body .sandbox-templates-list table tr td.status .not-published,
+#editorWrapper .ordered-template-list table tr td.status .not-published,
+.s3-popup .popup-body .ordered-template-list table tr td.status .not-published {
+  color: #ff0000;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block td,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td,
+#editorWrapper .ordered-template-list table tr.compare-block td,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td {
+  padding: 0;
+  vertical-align: top;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block td .diff,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td .diff,
+#editorWrapper .ordered-template-list table tr.compare-block td .diff,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td .diff {
+  padding: 10px 20px;
+  height: 500px;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line,
+#editorWrapper .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line {
+  position: relative;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line.changed:before,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line.changed:before,
+#editorWrapper .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line.changed:before,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line.changed:before,
+#editorWrapper .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line.deleted:before,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line.deleted:before,
+#editorWrapper .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line.deleted:before,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line.deleted:before,
+#editorWrapper .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line.added:before,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line.added:before,
+#editorWrapper .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line.added:before,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line.added:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  opacity: 0.5;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line.changed:before,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line.changed:before,
+#editorWrapper .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line.changed:before,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line.changed:before {
+  background: #cdebf7;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line.deleted:before,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line.deleted:before,
+#editorWrapper .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line.deleted:before,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line.deleted:before {
+  background: #f7b2b2;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line.added:before,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line.added:before,
+#editorWrapper .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line.added:before,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line.added:before {
+  background: #d1f9db;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line span,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td .diff .ace_content .ace_line span,
+#editorWrapper .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line span,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td .diff .ace_content .ace_line span {
+  position: relative;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block td .diff#diff_theme,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td .diff#diff_theme,
+#editorWrapper .ordered-template-list table tr.compare-block td .diff#diff_theme,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td .diff#diff_theme {
+  background: #f1f1f1;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block td .diff#diff_origin .ace_scrollbar.ace_scrollbar-v,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td .diff#diff_origin .ace_scrollbar.ace_scrollbar-v,
+#editorWrapper .ordered-template-list table tr.compare-block td .diff#diff_origin .ace_scrollbar.ace_scrollbar-v,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td .diff#diff_origin .ace_scrollbar.ace_scrollbar-v {
+  right: auto;
+  left: 0;
+  width: 15px !important;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block td .diff#diff_origin .ace_scrollbar.ace_scrollbar-h,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td .diff#diff_origin .ace_scrollbar.ace_scrollbar-h,
+#editorWrapper .ordered-template-list table tr.compare-block td .diff#diff_origin .ace_scrollbar.ace_scrollbar-h,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td .diff#diff_origin .ace_scrollbar.ace_scrollbar-h {
+  right: 0 !important;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block td .diff#diff_origin .ace_scroller,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block td .diff#diff_origin .ace_scroller,
+#editorWrapper .ordered-template-list table tr.compare-block td .diff#diff_origin .ace_scroller,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block td .diff#diff_origin .ace_scroller {
+  right: 0 !important;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block > td,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block > td,
+#editorWrapper .ordered-template-list table tr.compare-block > td,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block > td {
+  border-bottom: 5px solid #999999;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block > td table td,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block > td table td,
+#editorWrapper .ordered-template-list table tr.compare-block > td table td,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block > td table td {
+  width: 50%;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block #LeftPreview,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block #LeftPreview,
+#editorWrapper .ordered-template-list table tr.compare-block #LeftPreview,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block #LeftPreview,
+#editorWrapper .sandbox-templates-list table tr.compare-block #RightPreview,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block #RightPreview,
+#editorWrapper .ordered-template-list table tr.compare-block #RightPreview,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block #RightPreview {
+  display: none;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block .diff-title,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block .diff-title,
+#editorWrapper .ordered-template-list table tr.compare-block .diff-title,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block .diff-title {
+  font-size: 13px;
+  line-height: 26px;
+  background: #000000;
+  color: #ffffff;
+  padding: 0 10px;
+  text-align: center;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block .diff-title span.warn,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block .diff-title span.warn,
+#editorWrapper .ordered-template-list table tr.compare-block .diff-title span.warn,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block .diff-title span.warn {
+  color: #ff0000;
+}
+#editorWrapper .sandbox-templates-list table tr.compare-block .diff-title span.save-button,
+.s3-popup .popup-body .sandbox-templates-list table tr.compare-block .diff-title span.save-button,
+#editorWrapper .ordered-template-list table tr.compare-block .diff-title span.save-button,
+.s3-popup .popup-body .ordered-template-list table tr.compare-block .diff-title span.save-button {
+  float: left;
+  cursor: pointer;
+  color: #52d04c;
+  margin-left: -10px;
+  padding: 0 10px;
+  background: #444444;
+  border-right: 2px solid #999999;
+}
+#editorWrapper .sandbox-templates-list table.templates .t-title,
+.s3-popup .popup-body .sandbox-templates-list table.templates .t-title,
+#editorWrapper .ordered-template-list table.templates .t-title,
+.s3-popup .popup-body .ordered-template-list table.templates .t-title {
+  padding-left: 15px;
+  padding-right: 10px;
+  width: 1px;
+  white-space: nowrap;
+}
+#editorWrapper .sandbox-templates-list table.templates .t-filename,
+.s3-popup .popup-body .sandbox-templates-list table.templates .t-filename,
+#editorWrapper .ordered-template-list table.templates .t-filename,
+.s3-popup .popup-body .ordered-template-list table.templates .t-filename {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100px;
+  white-space: nowrap;
+}
+#editorWrapper .sandbox-templates-list table.templates .date,
+.s3-popup .popup-body .sandbox-templates-list table.templates .date,
+#editorWrapper .ordered-template-list table.templates .date,
+.s3-popup .popup-body .ordered-template-list table.templates .date {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 1px;
+  white-space: nowrap;
+}
+#editorWrapper .sandbox-templates-list table.templates .space,
+.s3-popup .popup-body .sandbox-templates-list table.templates .space,
+#editorWrapper .ordered-template-list table.templates .space,
+.s3-popup .popup-body .ordered-template-list table.templates .space {
+  width: 150px;
+}
+#editorWrapper .sandbox-templates-list table.templates .controls,
+.s3-popup .popup-body .sandbox-templates-list table.templates .controls,
+#editorWrapper .ordered-template-list table.templates .controls,
+.s3-popup .popup-body .ordered-template-list table.templates .controls {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 1px;
+  white-space: nowrap;
+}
+#editorWrapper .sandbox-templates-list table.templates .controls .s3-ico,
+.s3-popup .popup-body .sandbox-templates-list table.templates .controls .s3-ico,
+#editorWrapper .ordered-template-list table.templates .controls .s3-ico,
+.s3-popup .popup-body .ordered-template-list table.templates .controls .s3-ico {
+  cursor: pointer;
+  margin: 0 7px;
+}
+#editorWrapper .sandbox-templates-list table.templates .controls .s3-ico.hidden,
+.s3-popup .popup-body .sandbox-templates-list table.templates .controls .s3-ico.hidden,
+#editorWrapper .ordered-template-list table.templates .controls .s3-ico.hidden,
+.s3-popup .popup-body .ordered-template-list table.templates .controls .s3-ico.hidden {
+  visibility: hidden;
+  cursor: default;
+}
+#editorWrapper .sandbox-templates-list table.templates .controls .s3-ico.i-brick,
+.s3-popup .popup-body .sandbox-templates-list table.templates .controls .s3-ico.i-brick,
+#editorWrapper .ordered-template-list table.templates .controls .s3-ico.i-brick,
+.s3-popup .popup-body .ordered-template-list table.templates .controls .s3-ico.i-brick {
+  width: 18px;
+  background: url(/my/s3/images/redesign/s3-icons.png) -110px -27px no-repeat;
+  cursor: default;
+}
+#editorWrapper .sandbox-templates-list table.files .f-filename,
+.s3-popup .popup-body .sandbox-templates-list table.files .f-filename,
+#editorWrapper .ordered-template-list table.files .f-filename,
+.s3-popup .popup-body .ordered-template-list table.files .f-filename {
+  padding-left: 15px;
+  padding-right: 10px;
+  width: 1px;
+  white-space: nowrap;
+}
+#editorWrapper .sandbox-templates-list table.files .f-filename .s3-ico,
+.s3-popup .popup-body .sandbox-templates-list table.files .f-filename .s3-ico,
+#editorWrapper .ordered-template-list table.files .f-filename .s3-ico,
+.s3-popup .popup-body .ordered-template-list table.files .f-filename .s3-ico {
+  margin-right: 12px;
+}
+#editorWrapper .sandbox-templates-list table.files .f-filename .file-rename-wrapper,
+.s3-popup .popup-body .sandbox-templates-list table.files .f-filename .file-rename-wrapper,
+#editorWrapper .ordered-template-list table.files .f-filename .file-rename-wrapper,
+.s3-popup .popup-body .ordered-template-list table.files .f-filename .file-rename-wrapper {
+  margin-left: 10px;
+  position: relative;
+}
+#editorWrapper .sandbox-templates-list table.files .f-filename .file-rename-wrapper .s3-ico,
+.s3-popup .popup-body .sandbox-templates-list table.files .f-filename .file-rename-wrapper .s3-ico,
+#editorWrapper .ordered-template-list table.files .f-filename .file-rename-wrapper .s3-ico,
+.s3-popup .popup-body .ordered-template-list table.files .f-filename .file-rename-wrapper .s3-ico {
+  margin: 0;
+}
+#editorWrapper .sandbox-templates-list table.files .f-filename .file-rename-wrapper .s3-ico.i-pencil,
+.s3-popup .popup-body .sandbox-templates-list table.files .f-filename .file-rename-wrapper .s3-ico.i-pencil,
+#editorWrapper .ordered-template-list table.files .f-filename .file-rename-wrapper .s3-ico.i-pencil,
+.s3-popup .popup-body .ordered-template-list table.files .f-filename .file-rename-wrapper .s3-ico.i-pencil {
+  opacity: 0.3;
+  cursor: pointer;
+}
+#editorWrapper .sandbox-templates-list table.files .f-filename .file-rename-wrapper .s3-ico.i-pencil:hover,
+.s3-popup .popup-body .sandbox-templates-list table.files .f-filename .file-rename-wrapper .s3-ico.i-pencil:hover,
+#editorWrapper .ordered-template-list table.files .f-filename .file-rename-wrapper .s3-ico.i-pencil:hover,
+.s3-popup .popup-body .ordered-template-list table.files .f-filename .file-rename-wrapper .s3-ico.i-pencil:hover {
+  opacity: 1;
+}
+#editorWrapper .sandbox-templates-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper,
+.s3-popup .popup-body .sandbox-templates-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper,
+#editorWrapper .ordered-template-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper,
+.s3-popup .popup-body .ordered-template-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper {
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  z-index: 100;
+  margin-top: 8px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #cccccc;
+}
+#editorWrapper .sandbox-templates-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper:before,
+.s3-popup .popup-body .sandbox-templates-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper:before,
+#editorWrapper .ordered-template-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper:before,
+.s3-popup .popup-body .ordered-template-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper:before {
+  bottom: 100%;
+  left: 15px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #cccccc;
+  border-width: 6px;
+}
+#editorWrapper .sandbox-templates-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper.hidden,
+.s3-popup .popup-body .sandbox-templates-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper.hidden,
+#editorWrapper .ordered-template-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper.hidden,
+.s3-popup .popup-body .ordered-template-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper.hidden {
+  display: none;
+}
+#editorWrapper .sandbox-templates-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper .s3-btn,
+.s3-popup .popup-body .sandbox-templates-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper .s3-btn,
+#editorWrapper .ordered-template-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper .s3-btn,
+.s3-popup .popup-body .ordered-template-list table.files .f-filename .file-rename-wrapper .rename-form-wrapper .s3-btn {
+  margin: 0 0 0 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+#editorWrapper .sandbox-templates-list table.files .f-filesize,
+.s3-popup .popup-body .sandbox-templates-list table.files .f-filesize,
+#editorWrapper .ordered-template-list table.files .f-filesize,
+.s3-popup .popup-body .ordered-template-list table.files .f-filesize {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100px;
+  white-space: nowrap;
+}
+#editorWrapper .sandbox-templates-list table.files .date,
+.s3-popup .popup-body .sandbox-templates-list table.files .date,
+#editorWrapper .ordered-template-list table.files .date,
+.s3-popup .popup-body .ordered-template-list table.files .date {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 1px;
+  white-space: nowrap;
+}
+#editorWrapper .sandbox-templates-list table.files .space,
+.s3-popup .popup-body .sandbox-templates-list table.files .space,
+#editorWrapper .ordered-template-list table.files .space,
+.s3-popup .popup-body .ordered-template-list table.files .space {
+  width: 150px;
+}
+#editorWrapper .sandbox-templates-list table.files .controls,
+.s3-popup .popup-body .sandbox-templates-list table.files .controls,
+#editorWrapper .ordered-template-list table.files .controls,
+.s3-popup .popup-body .ordered-template-list table.files .controls {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 1px;
+  white-space: nowrap;
+}
+#editorWrapper .sandbox-templates-list table.files .controls .s3-ico,
+.s3-popup .popup-body .sandbox-templates-list table.files .controls .s3-ico,
+#editorWrapper .ordered-template-list table.files .controls .s3-ico,
+.s3-popup .popup-body .ordered-template-list table.files .controls .s3-ico {
+  cursor: pointer;
+  margin: 0 7px;
+}
+#editorWrapper .sandbox-templates-list table.files .controls .s3-ico.hidden,
+.s3-popup .popup-body .sandbox-templates-list table.files .controls .s3-ico.hidden,
+#editorWrapper .ordered-template-list table.files .controls .s3-ico.hidden,
+.s3-popup .popup-body .ordered-template-list table.files .controls .s3-ico.hidden {
+  visibility: hidden;
+  cursor: default;
+}
+#editorWrapper .sandbox-templates-list table.files .controls .s3-ico.i-brick,
+.s3-popup .popup-body .sandbox-templates-list table.files .controls .s3-ico.i-brick,
+#editorWrapper .ordered-template-list table.files .controls .s3-ico.i-brick,
+.s3-popup .popup-body .ordered-template-list table.files .controls .s3-ico.i-brick {
+  width: 18px;
+  background: url(/my/s3/images/redesign/s3-icons.png) -110px -27px no-repeat;
+  cursor: default;
+}
+.s3-popup .popup-body .ordered-template-list {
+  padding-bottom: 30px;
+}
+#editor-popup-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0 10px;
+  font: normal 14px Arial;
+  line-height: 30px;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0 5px 0 0;
+  border-right: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  z-index: 100;
+}
+#editor-loader {
+  height: 32px;
+  width: 32px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -16px;
+  margin-top: -16px;
+  z-index: 1000;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.ace_search_options .ace_button {
+  display: none;
+}
+.tpl-data-title {
+  color: #333;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+.tpl-data-title span {
+  display: inline-block;
+  vertical-align: middle;
+}

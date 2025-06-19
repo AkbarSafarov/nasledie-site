@@ -1,0 +1,41 @@
+
+div.recommended_aritlce2_dependent_wr {
+
+}
+
+div.recommended_aritlce2_dependent {
+	width: 49%;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 10px;
+}
+
+div.recommended_mutual {
+	display: none;
+}
+
+div.recommended_dependent {
+	display: none;
+}
+
+.s3-article2-wrap {
+	background: #ffffff;
+	border: 1px solid #e9e9e9;
+	border-radius: 6px;
+	padding: 20px;
+	display: block;
+	vertical-align: top;
+}
+
+ul.s3-article2-ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.s3-article2-ul li {
+	border: 1px solid #d8d8d8;
+	padding: 10px 10px;
+	margin-bottom: 5px;
+	border-radius:3px;
+}
